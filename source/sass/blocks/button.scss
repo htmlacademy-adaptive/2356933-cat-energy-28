@@ -1,0 +1,16 @@
+@import "../variables";
+
+.button {
+  display: flex;
+  font: 400 14px/1 $oswald-font;
+  text-transform: uppercase;
+
+  &--primary {
+    justify-content: center;
+    align-items: center;
+    background-color: $accent-color;
+    height: 40px;
+    width: 100%;
+    color: $basic-white;
+  }
+}

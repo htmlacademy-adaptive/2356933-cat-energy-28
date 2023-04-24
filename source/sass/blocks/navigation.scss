@@ -1,0 +1,53 @@
+@import "../variables";
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__wrapper {
+    display: none;
+  }
+
+  &__toggle {
+    width: 24px;
+    height: 1.5px;
+    background-color: $basic-black;
+    position: relative;
+    transition: .3s;
+    padding: 0;
+    border-width: 0;
+
+    &::before,
+    &::after {
+      content: '';
+      width: 24px;
+      height: 1.5px;
+      background-color: $basic-black;
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {
+      top: -8px;
+    }
+
+    &::after {
+      bottom: -8px;
+    }
+
+    &.active {
+      background-color: transparent;
+
+      &::before {
+        top: 0;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        top: 0;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

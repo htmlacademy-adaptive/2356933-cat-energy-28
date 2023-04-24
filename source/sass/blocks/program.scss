@@ -1,0 +1,12 @@
+@import "../variables";
+
+.program {
+  &__title {
+    text-transform: uppercase;
+    padding-bottom: 25px;
+  }
+
+  &__description {
+    padding-bottom: 40px;
+  }
+}

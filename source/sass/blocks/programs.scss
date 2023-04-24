@@ -1,0 +1,15 @@
+@import "../variables";
+
+.programs {
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__item {
+    background-color: $additional-background;
+    padding: 24px 22px 22px;
+  }
+}

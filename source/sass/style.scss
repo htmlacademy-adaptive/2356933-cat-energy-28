@@ -1,1 +1,15 @@
-// Начните писать стили здесь
+@import "variables";
+@import "fonts";
+
+@import "common/base";
+
+@import "blocks/page-header";
+@import "blocks/logo";
+@import "blocks/navigation";
+@import "blocks/button";
+@import "blocks/programs";
+@import "blocks/program";
+@import "blocks/title";
+@import "blocks/text";
+@import "blocks/promo";
+@import "blocks/image";
