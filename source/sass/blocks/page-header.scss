@@ -1,15 +1,11 @@
-@import "../variables";
-
 .page-header {
   background-color: $basic-white;
   padding: 10px 20px 17px 20px;
-  display: grid;
-  grid-template-columns: 60% 40%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
 
-  &__logo {
-
-  }
-
-  &__navigation {
-  }
+.page-header__logo {
+  justify-content: space-between;
 }

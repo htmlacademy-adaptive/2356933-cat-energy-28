@@ -1,6 +1,6 @@
-@import "../variables";
-
 .text {
-  font: 400 14px/18px $lato-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
   color: $main-text-color;
 }

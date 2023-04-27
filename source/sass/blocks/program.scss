@@ -1,12 +1,64 @@
-@import "../variables";
+.program__title {
+  text-transform: uppercase;
+  margin-bottom: 29px;
+  margin-top: 0;
+  padding-left: 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
 
-.program {
-  &__title {
-    text-transform: uppercase;
-    padding-bottom: 25px;
+  &::before {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $accent-color;
+    left: 0;
   }
 
-  &__description {
-    padding-bottom: 40px;
+  &::after {
+    position: absolute;
+    content: '';
+  }
+
+  &--slim {
+    &::after {
+      background: url('../../img/icons/cat-slim.svg') no-repeat center center;
+      width: 35px;
+      height: 50px;
+      left: 9px;
+    }
+  }
+
+  &--pro {
+    &::after {
+      background: url('../../img/icons/cat-pro.svg') no-repeat center center;
+      width: 67px;
+      height: 28px;
+      left: -15px;
+    }
+  }
+}
+
+.program__description {
+  padding-bottom: 23px;
+  margin: 0;
+  border-bottom: .5px solid $additional-gray-border;
+}
+
+.program__link {
+  color: $basic-black;
+  position: relative;
+  margin-top: 19px;
+  padding-right: 30px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    background: url('../../img/icons/icon-arrow.svg') no-repeat;
+    width: 24px;
+    height: 12px;
+    right: 0;
   }
 }

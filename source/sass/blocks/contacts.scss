@@ -1,0 +1,23 @@
+.contacts__partnership {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.contacts__partnership-title {
+  font: 400 16px/20px $oswald-font;
+  color: $additional-black;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.contacts__partnership-address {
+  font: 400 14px/20px $lato-font;
+  color: $main-text-color;
+  margin: 0;
+}
+
+.contacts__map {
+  height: 362px;
+}

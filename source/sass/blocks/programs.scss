@@ -1,15 +1,21 @@
-@import "../variables";
-
 .programs {
-  &__list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+  padding-bottom: 20px;
+}
 
-  &__item {
-    background-color: $additional-background;
-    padding: 24px 22px 22px;
-  }
+.programs__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.programs__item {
+  background-color: $additional-background;
+  padding: 24px 22px 22px;
+}
+
+.programs__wrapper {
+  margin-bottom: 20px;
 }

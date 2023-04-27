@@ -1,13 +1,10 @@
-body, h1, h2, h3, p, ul {
+body {
   margin: 0;
+  font-family: $lato-font;
 }
 
 a {
   text-decoration: none;
-}
-
-ul {
-  padding-inline-start: 0;
 }
 
 .visually-hidden {
@@ -26,4 +23,9 @@ ul {
 .container {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.image {
+  height: auto;
+  max-width: 100%;
 }
