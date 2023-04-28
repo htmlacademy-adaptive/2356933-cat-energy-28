@@ -15,18 +15,20 @@
     <div class="navigation__wrapper navigation__wrapper--active">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--current" href="#">Главная</a>
+          <a class="navigation__link" href="/">Главная</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="#">Каталог продукции</a>
+          <a class="navigation__link navigation__link--current" href="form.html">Каталог продукции</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="#">Подбор программы</a>
+          <a class="navigation__link" href="catalogue.html">Подбор программы</a>
         </li>
       </ul>
     </div>
-    <button class="navigation__toggle navigation__toggle--active" type="button">
-      <span class="visually-hidden">Открыть меню</span>
+    <button class="navigation__button" type="button">
+      <span class="navigation__toggle navigation__toggle--active">
+        <span class="visually-hidden">Открыть меню</span>
+      </span>
     </button>
   </nav>
 </header>
@@ -111,7 +113,7 @@
       </ul>
     </fieldset>
     <div class="form__submit">
-      <button class="form__button button button-primary" type="submit">Отправить заявку</button>
+      <button class="form__button button button--primary" type="submit">Отправить заявку</button>
       <p class="form__required">* — Обязательные поля</p>
     </div>
   </form>
@@ -167,5 +169,6 @@
       href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
   </div>
 </footer>
+<script src="js/menu.js"></script>
 </body>
 </html>
