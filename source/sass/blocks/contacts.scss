@@ -1,3 +1,9 @@
+.contacts {
+  &--with-background {
+    background-color: $additional-background;
+  }
+}
+
 .contacts__partnership {
   display: flex;
   justify-content: space-between;
