@@ -1,0 +1,29 @@
+.catalogue {
+  padding-top: 27px;
+}
+
+.catalogue__title {
+  margin: 0 0 41px 0;
+}
+
+.catalogue__list {
+  border-top: 1px solid $additional-gray2-border;
+  border-bottom: 1px solid $additional-gray2-border;
+  margin: 0;
+  padding: 0;
+}
+
+.catalogue__item {
+  padding-top: 19px;
+  padding-bottom: 25px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $additional-gray2-border;
+  }
+}
+
+.catalogue__more {
+  border-bottom: 1px solid $additional-gray2-border;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}

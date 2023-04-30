@@ -1,6 +1,6 @@
 .button {
   display: inline-flex;
-  font: 400 14px/1 $oswald-font;
+  font: 400 16px/1 $oswald-font;
   text-transform: uppercase;
 
   &--primary {
@@ -11,6 +11,19 @@
     width: 100%;
     color: $basic-white;
     border-color: $accent-color;
+    box-sizing: border-box;
+    padding: 0;
+    border-width: 0;
+  }
+
+  &--secondary {
+    justify-content: center;
+    align-items: center;
+    background-color: $additional-background;
+    height: 40px;
+    width: 100%;
+    color: $main-text-color;
+    border-color: $additional-background;
     box-sizing: border-box;
     padding: 0;
     border-width: 0;

@@ -1,0 +1,14 @@
+.optional-card__title {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 13px;
+}
+
+.optional-card__description {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: $main-text-color;
+}

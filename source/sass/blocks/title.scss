@@ -1,21 +1,19 @@
 .title {
   font-family: $oswald-font;
+  font-weight: 400;
 
   &--h1 {
-    font-weight: 400;
     font-size: 36px;
     line-height: 1;
   }
 
   &--h2 {
-    font-weight: 400;
     font-size: 36px;
     line-height: 1;
     color: $basic-black;
   }
 
   &--h3 {
-    font-weight: 400;
     font-size: 24px;
     line-height: 37px;
     color: $basic-black;

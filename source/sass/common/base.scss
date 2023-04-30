@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: $lato-font;
+  font-weight: 400;
 }
 
 a {
@@ -28,4 +29,9 @@ a {
 .image {
   height: auto;
   max-width: 100%;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
 }

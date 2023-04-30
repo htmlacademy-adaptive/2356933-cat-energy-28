@@ -16,9 +16,9 @@
   display: flex;
   justify-content: center;
   margin: 0;
-  padding: 23px 0;
+  padding-top: 23px;
+  padding-bottom: 23px;
   gap: 26px;
-  list-style: none;
   border-bottom: 1px solid $additional-gray-border;
 }
 
