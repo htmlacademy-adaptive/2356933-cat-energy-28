@@ -12,7 +12,7 @@
   transform: translateY(-100%);
   background-color: $basic-white;
   z-index: 1;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   &.navigation__wrapper--active {
     transform: translateY(0);
@@ -57,20 +57,20 @@
   height: 1.5px;
   background-color: $basic-black;
   position: relative;
-  transition: background-color .3s ease;
+  transition: background-color 0.3s ease;
   padding: 0;
   border-width: 0;
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     width: 24px;
     height: 1.5px;
     background-color: $basic-black;
     position: absolute;
     transform: rotate(0);
     left: 0;
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
   }
 
   &::before {

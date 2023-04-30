@@ -19,7 +19,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 60px;
     height: 60px;
     background-color: $accent-color;
@@ -28,7 +28,7 @@
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     align-self: center;
     top: 0;
     left: 12px;
@@ -38,8 +38,8 @@
   }
 
   &--icon-leaf {
-    &::after{
-      background: url('../../img/icons/icon-leaf.svg') no-repeat center center;
+    &::after {
+      background: url("../../img/icons/icon-leaf.svg") no-repeat center center;
       width: 38px;
       height: 40px;
     }
@@ -47,7 +47,7 @@
 
   &--icon-boil {
     &::after {
-      background: url('../../img/icons/icon-boil.svg') no-repeat center center;
+      background: url("../../img/icons/icon-boil.svg") no-repeat center center;
       width: 33px;
       height: 36px;
     }
@@ -55,7 +55,7 @@
 
   &--icon-eat {
     &::after {
-      background: url('../../img/icons/icon-eat.svg') no-repeat center center;
+      background: url("../../img/icons/icon-eat.svg") no-repeat center center;
       width: 31px;
       height: 38px;
     }
@@ -63,7 +63,7 @@
 
   &--icon-time {
     &::after {
-      background: url('../../img/icons/icon-time.svg') no-repeat center center;
+      background: url("../../img/icons/icon-time.svg") no-repeat center center;
       width: 33px;
       height: 38px;
     }

@@ -1,19 +1,7 @@
 .gift {
-  position: relative;
   padding-top: 58px;
   padding-bottom: 43px;
-
-  &::before {
-    position: absolute;
-    content: '';
-    top: 0;
-    background: linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)),
-    url('../../img/catalogue/gift-background.jpg') no-repeat 50% 0;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
+  background: linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)), url("../../img/catalogue/gift-background.jpg") no-repeat center center;
 }
 
 .gift__text {
@@ -28,8 +16,8 @@
 
   &::before {
     position: absolute;
-    content: '';
-    background: url('../../img/icons/icon-gift.svg');
+    content: "";
+    background: url("../../img/icons/icon-gift.svg");
     width: 78px;
     height: 80px;
     top: 0;

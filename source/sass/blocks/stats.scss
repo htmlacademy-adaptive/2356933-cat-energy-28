@@ -14,9 +14,10 @@
   padding: 15px 20px;
   flex-basis: 50%;
 
-  &::before, &::after {
+  &::before,
+  &::after {
     position: absolute;
-    content: '';
+    content: "";
     background-color: $grey-border;
     width: 19px;
     height: 1px;

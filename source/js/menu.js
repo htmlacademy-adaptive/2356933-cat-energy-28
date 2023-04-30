@@ -5,7 +5,7 @@ const menuActiveClass = 'navigation__wrapper--active';
 const menuToggleActiveClass = 'navigation__toggle--active';
 
 
-menuButton.addEventListener('click', function(){
+menuButton.addEventListener('click', function () {
   menuToggle.classList.toggle(menuToggleActiveClass);
   menu.classList.toggle(menuActiveClass);
 });
