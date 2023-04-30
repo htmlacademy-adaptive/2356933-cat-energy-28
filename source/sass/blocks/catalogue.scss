@@ -7,8 +7,8 @@
 }
 
 .catalogue__list {
-  border-top: 1px solid $additional-gray2-border;
-  border-bottom: 1px solid $additional-gray2-border;
+  border-top: 1px solid $grey-border-catalogue;
+  border-bottom: 1px solid $grey-border-catalogue;
   margin: 0;
   padding: 0;
 }
@@ -18,12 +18,12 @@
   padding-bottom: 25px;
 
   &:not(:last-child) {
-    border-bottom: 1px solid $additional-gray2-border;
+    border-bottom: 1px solid $grey-border-catalogue;
   }
 }
 
 .catalogue__more {
-  border-bottom: 1px solid $additional-gray2-border;
+  border-bottom: 1px solid $grey-border-catalogue;
   padding-top: 25px;
   padding-bottom: 25px;
 }

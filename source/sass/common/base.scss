@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: $lato-font;
   font-weight: 400;
+  background-color: $basic-white;
 }
 
 a {
@@ -24,14 +25,4 @@ a {
 .container {
   padding-left: 20px;
   padding-right: 20px;
-}
-
-.image {
-  height: auto;
-  max-width: 100%;
-}
-
-.list {
-  list-style: none;
-  padding-left: 0;
 }
