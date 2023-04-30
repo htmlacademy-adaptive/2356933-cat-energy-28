@@ -1,47 +1,38 @@
-.more__title {
-  font-size: 16px;
-  line-height: 20px;
-  color: $additional-black;
-  text-align: center;
-  text-transform: uppercase;
-  margin-top: 23px;
-  margin-bottom: 8px;
-}
-
-.more__text {
-  font-size: 12px;
-  line-height: 16px;
-  color: $main-text-color;
-  text-align: center;
-}
-
-.more__plus {
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin: auto;
+.gift {
   position: relative;
-
-  &::before,
-  &::after {
-    display: inherit;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    content: '';
-    margin: auto;
-    background-color: $plus-button;
-  }
+  padding-top: 58px;
+  padding-bottom: 43px;
 
   &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    background: linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)),
+    url('../../img/catalogue/gift-background.jpg') no-repeat 50% 0;
+    background-size: cover;
     width: 100%;
-    height: 2px;
-  }
-
-  &::after {
-    width: 2px;
     height: 100%;
+    z-index: -1;
+  }
+}
+
+.gift__text {
+  color: $basic-white;
+  text-align: center;
+  position: relative;
+  padding-top: 128px;
+  max-width: 160px;
+  margin: 0 auto;
+
+  &::before {
+    position: absolute;
+    content: '';
+    background: url('../../img/icons/icon-gift.svg');
+    width: 78px;
+    height: 80px;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
   }
 }
