@@ -6,8 +6,9 @@
 }
 
 .product-card__title {
+  font-size: 16px;
+  line-height: 20px;
   margin: 0 0 14px 0;
-  font: 400 16px/20px $oswald-font;
   color: $product-title;
   text-transform: uppercase;
   max-width: 80px;
@@ -16,6 +17,12 @@
 .product-card__param {
   display: flex;
   justify-content: space-between;
+}
+
+.product-card__param-text {
+  font-size: 12px;
+  line-height: 16px;
+  color: $main-text-color;
 }
 
 .product-card__image-link,
