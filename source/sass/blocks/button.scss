@@ -1,6 +1,8 @@
 .button {
   display: inline-flex;
-  font: 400 16px/1 $oswald-font;
+  font-family: $oswald-font;
+  font-size: 16px;
+  line-height: 1;
   text-transform: uppercase;
 
   &--primary {

@@ -24,11 +24,13 @@
 }
 
 .promo__slogan {
+  font-family: $oswald-font;
+  font-size: 14px;
+  line-height: 1;
   text-align: center;
   margin-bottom: 29px;
   color: $basic-white;
   text-transform: uppercase;
-  font: 400 14px/1 $oswald-font;
 }
 
 .promo__image {

@@ -14,7 +14,8 @@
 }
 
 .form__text {
-  font: 400 14px/18px $oswald-font;
+  font-size: 14px;
+  line-height: 18px;
   color: $basic-black;
   margin: 0;
   text-transform: uppercase;
@@ -56,7 +57,8 @@
 }
 
 .form__label {
-  font: 400 16px/18px $oswald-font;
+  font-size: 16px;
+  line-height: 18px;
   color: $main-text-color;
   text-transform: uppercase;
 }
@@ -68,7 +70,8 @@
 }
 
 .form__control {
-  font: 400 16px/18px $oswald-font;
+  font-size: 16px;
+  line-height: 18px;
   color: $main-text-color;
   border: 1px solid $grey-border-form;
   text-transform: uppercase;
@@ -90,7 +93,8 @@
 
 .form__legend {
   display: inline-block;
-  font: 400 24px/26px $oswald-font;
+  font-size: 24px;
+  line-height: 26px;
   color: $basic-black;
   max-width: fit-content;
   background-color: $basic-white;
@@ -112,12 +116,13 @@
 }
 
 .form__button {
-  //margin-top: 34px;
   margin-bottom: 21px;
 }
 
 .form__required {
-  font: 400 14px/16px $lato-font;
+  font-family: $lato-font;
+  font-size: 14px;
+  line-height: 16px;
   color: $basic-black;
   text-align: center;
   margin: 0;

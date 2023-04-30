@@ -33,16 +33,18 @@
 }
 
 .stats__number {
-  font: 400 24px/1 $oswald-font;
+  font-family: $oswald-font;
+  font-size: 24px;
+  line-height: 1;
   color: $basic-black;
   text-transform: uppercase;
   margin-bottom: 9px;
 }
 
 .stats__description {
-  font: 400 12px/1 $lato-font;
-  position: absolute;
+  font-size: 12px;
   line-height: 1;
+  position: absolute;
   color: $main-text-color;
   margin: 0 auto;
   left: 0;
@@ -51,7 +53,9 @@
 }
 
 .stats__legend {
-  font: 400 14px/20px $oswald-font;
+  font-family: $oswald-font;
+  font-size: 14px;
+  line-height: 20px;
   color: $basic-black;
   text-align: center;
   text-transform: uppercase;
