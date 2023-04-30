@@ -24,7 +24,7 @@
 
   &--slim {
     &::after {
-      background: url("../../img/icons/cat-slim.svg") no-repeat center center;
+      background: url("../img/icons/cat-slim.svg") no-repeat center center;
       width: 35px;
       height: 50px;
       left: 9px;
@@ -33,7 +33,7 @@
 
   &--pro {
     &::after {
-      background: url("../../img/icons/cat-pro.svg") no-repeat center center;
+      background: url("../img/icons/cat-pro.svg") no-repeat center center;
       width: 67px;
       height: 28px;
       left: -15px;
@@ -56,7 +56,7 @@
   &::before {
     position: absolute;
     content: "";
-    background: url("../../img/icons/icon-arrow.svg") no-repeat;
+    background: url("../img/icons/icon-arrow.svg") no-repeat;
     width: 24px;
     height: 12px;
     right: 0;
