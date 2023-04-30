@@ -289,7 +289,7 @@ a {
 .promo::before {
   position: absolute;
   content: "";
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/main/main-background.png") no-repeat 50% 0;
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main/main-background.png") no-repeat 50% 0;
   background-size: cover;
   width: 100%;
   height: 302px;
@@ -362,13 +362,13 @@ a {
   content: "";
 }
 .program__title--slim::after {
-  background: url("../../img/icons/cat-slim.svg") no-repeat center center;
+  background: url("../img/icons/cat-slim.svg") no-repeat center center;
   width: 35px;
   height: 50px;
   left: 9px;
 }
 .program__title--pro::after {
-  background: url("../../img/icons/cat-pro.svg") no-repeat center center;
+  background: url("../img/icons/cat-pro.svg") no-repeat center center;
   width: 67px;
   height: 28px;
   left: -15px;
@@ -389,7 +389,7 @@ a {
 .program__link::before {
   position: absolute;
   content: "";
-  background: url("../../img/icons/icon-arrow.svg") no-repeat;
+  background: url("../img/icons/icon-arrow.svg") no-repeat;
   width: 24px;
   height: 12px;
   right: 0;
@@ -433,22 +433,22 @@ a {
   margin: auto 0;
 }
 .features__item--icon-leaf::after {
-  background: url("../../img/icons/icon-leaf.svg") no-repeat center center;
+  background: url("../img/icons/icon-leaf.svg") no-repeat center center;
   width: 38px;
   height: 40px;
 }
 .features__item--icon-boil::after {
-  background: url("../../img/icons/icon-boil.svg") no-repeat center center;
+  background: url("../img/icons/icon-boil.svg") no-repeat center center;
   width: 33px;
   height: 36px;
 }
 .features__item--icon-eat::after {
-  background: url("../../img/icons/icon-eat.svg") no-repeat center center;
+  background: url("../img/icons/icon-eat.svg") no-repeat center center;
   width: 31px;
   height: 38px;
 }
 .features__item--icon-time::after {
-  background: url("../../img/icons/icon-time.svg") no-repeat center center;
+  background: url("../img/icons/icon-time.svg") no-repeat center center;
   width: 33px;
   height: 38px;
 }
@@ -692,7 +692,7 @@ a {
 .gift {
   padding-top: 58px;
   padding-bottom: 43px;
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/catalogue/gift-background.jpg") no-repeat center center;
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalogue/gift-background.jpg") no-repeat center center;
 }
 
 .gift__text {
@@ -708,7 +708,7 @@ a {
 .gift__text::before {
   position: absolute;
   content: "";
-  background: url("../../img/icons/icon-gift.svg");
+  background: url("../img/icons/icon-gift.svg");
   width: 78px;
   height: 80px;
   top: 0;
