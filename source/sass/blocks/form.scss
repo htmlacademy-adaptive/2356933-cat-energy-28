@@ -59,8 +59,19 @@
 .form__label {
   font-size: 16px;
   line-height: 18px;
-  color: $main-text-color;
   text-transform: uppercase;
+
+  &--default {
+    color: $main-text-color;
+  }
+
+  &--checkbox {
+    color: $basic-black;
+  }
+
+  &--radio {
+    color: $additional-black2;
+  }
 }
 
 .form__field {
