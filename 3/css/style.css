@@ -18,7 +18,7 @@
 }
 body {
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   background-color: #ffffff;
 }
@@ -47,7 +47,7 @@ a {
 }
 
 .title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
 }
 .title--h1 {
@@ -84,7 +84,7 @@ a {
 
 .button {
   display: inline-flex;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
@@ -157,7 +157,7 @@ a {
 }
 
 .navigation__link {
-  font: 500 20px/1 "Oswald", sans-serif;
+  font: 500 20px/1 "Oswald", "Arial", sans-serif;
   color: #000000;
   display: block;
   text-align: center;
@@ -247,6 +247,10 @@ a {
   align-items: center;
 }
 
+.academy__caption {
+  color: #444444;
+}
+
 .contacts--with-background {
   background-color: #f2f2f2;
 }
@@ -305,7 +309,7 @@ a {
 }
 
 .promo__slogan {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1;
   text-align: center;
@@ -317,6 +321,10 @@ a {
 .promo__image {
   display: block;
   margin: 0 auto;
+}
+
+.promo__button {
+  font-size: 14px;
 }
 
 .programs {
@@ -503,7 +511,7 @@ a {
 }
 
 .stats__number {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 1;
   color: #000000;
@@ -523,7 +531,7 @@ a {
 }
 
 .stats__legend {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #000000;
@@ -678,6 +686,7 @@ a {
 .optional-card__title {
   font-size: 16px;
   line-height: 16px;
+  color: #222222;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 13px;
@@ -718,7 +727,7 @@ a {
 }
 
 .form {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   padding-top: 27px;
   padding-bottom: 32px;
 }
@@ -775,8 +784,16 @@ a {
 .form__label {
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
   text-transform: uppercase;
+}
+.form__label--default {
+  color: #444444;
+}
+.form__label--checkbox {
+  color: #000000;
+}
+.form__label--radio {
+  color: #222222;
 }
 
 .form__field {
@@ -833,7 +850,7 @@ a {
 }
 
 .form__required {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   color: #000000;
