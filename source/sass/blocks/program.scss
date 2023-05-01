@@ -1,7 +1,8 @@
 .program__title {
   text-transform: uppercase;
-  margin-bottom: 29px;
+  padding-bottom: 29px;
   margin-top: 0;
+  margin-bottom: 0;
   padding-left: 70px;
   position: relative;
   display: flex;
@@ -24,7 +25,7 @@
 
   &--slim {
     &::after {
-      background: url("../img/icons/cat-slim.svg") no-repeat center center;
+      background: url("../img/icons/cat-slim.svg") no-repeat center center/cover;
       width: 35px;
       height: 50px;
       left: 9px;
@@ -33,10 +34,73 @@
 
   &--pro {
     &::after {
-      background: url("../img/icons/cat-pro.svg") no-repeat center center;
+      background: url("../img/icons/cat-pro.svg") no-repeat center center/cover;
       width: 67px;
       height: 28px;
       left: -15px;
+    }
+  }
+
+  @media (min-width: $tabletWidth) {
+    padding-bottom: 24px;
+    padding-left: 0;
+
+    &::before {
+      right: 0;
+      top: 25px;
+      left: unset;
+      width: 200px;
+      height: 200px;
+    }
+
+    &--slim {
+      &::after {
+        width: 140px;
+        height: 194px;
+        right: 33px;
+        left: unset;
+        top: 12px;
+      }
+    }
+
+    &--pro {
+      &::after {
+        width: 268px;
+        height: 112px;
+        right: -33px;
+        left: unset;
+        top: 64px;
+      }
+    }
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding-left: 162px;
+    padding-bottom: 73px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: 0;
+      left: 0;
+    }
+
+    &--slim {
+      &::after {
+        width: 70px;
+        height: 97px;
+        left: 21px;
+        top: 0;
+      }
+    }
+
+    &--pro {
+      &::after {
+        width: 134px;
+        height: 56px;
+        left: -16px;
+        top: 24px;
+      }
     }
   }
 }
@@ -45,6 +109,19 @@
   padding-bottom: 23px;
   margin: 0;
   border-bottom: 0.5px solid $additional-grey-border;
+
+  @media (min-width: $tabletWidth) {
+    border-bottom: none;
+    padding-bottom: 0;
+    max-width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $basic-black;
+  }
+
+  @media (min-width: $desktopWidth) {
+    max-width: 457px;
+  }
 }
 
 .program__link {
@@ -60,5 +137,12 @@
     width: 24px;
     height: 12px;
     right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  @media (min-width: $tabletWidth) {
+    margin-top: 52px;
   }
 }

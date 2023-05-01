@@ -1,10 +1,18 @@
 .page-header {
   background-color: $basic-white;
-  padding: 10px 20px 17px 20px;
+  padding-top: 10px;
+  padding-bottom: 17px;
+  //padding: 10px 20px 17px 20px;
   display: flex;
   justify-content: space-between;
   position: relative;
   border-bottom: 1px solid $grey-additional-background;
+
+  @media (min-width: $tabletWidth) {
+    border-bottom: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .page-header__logo {

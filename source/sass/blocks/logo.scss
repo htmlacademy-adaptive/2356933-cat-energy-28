@@ -3,3 +3,40 @@
   align-items: center;
   gap: 56px;
 }
+
+.logo__image {
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: $tabletWidth) {
+    &--mobile,
+    &--desktop {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktopWidth) {
+    &--mobile,
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+}
+
+.logo__caption {
+  &--header {
+    @media (min-width: $tabletWidth) {
+      display: none;
+    }
+  }
+}
