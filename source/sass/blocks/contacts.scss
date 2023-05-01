@@ -1,0 +1,29 @@
+.contacts {
+  &--with-background {
+    background-color: $additional-background;
+  }
+}
+
+.contacts__partnership {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.contacts__partnership-title {
+  font-size: 16px;
+  line-height: 20px;
+  color: $additional-black;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.contacts__partnership-address {
+  line-height: 20px;
+  margin: 0;
+}
+
+.contacts__map {
+  height: 362px;
+}

@@ -1,0 +1,12 @@
+.page-header {
+  background-color: $basic-white;
+  padding: 10px 20px 17px 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-bottom: 1px solid $grey-additional-background;
+}
+
+.page-header__logo {
+  justify-content: space-between;
+}

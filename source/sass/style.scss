@@ -1,1 +1,30 @@
-// Начните писать стили здесь
+@import "variables";
+@import "fonts";
+@import "common/base";
+@import "blocks/title";
+@import "blocks/text";
+@import "blocks/image";
+@import "blocks/list";
+@import "blocks/button";
+@import "blocks/page-header";
+@import "blocks/navigation";
+@import "blocks/page-footer";
+@import "blocks/academy";
+@import "blocks/contacts";
+@import "blocks/logo";
+//main
+@import "blocks/promo";
+@import "blocks/programs";
+@import "blocks/program";
+@import "blocks/features";
+@import "blocks/example";
+@import "blocks/stats";
+//catalogue
+@import "blocks/catalogue";
+@import "blocks/product";
+@import "blocks/more";
+@import "blocks/optionals";
+@import "blocks/optional-card";
+@import "blocks/gift";
+//form
+@import "blocks/form";

@@ -1,0 +1,28 @@
+.gift {
+  padding-top: 58px;
+  padding-bottom: 43px;
+  background: linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)), url("../img/catalogue/gift-background.jpg") no-repeat center center;
+}
+
+.gift__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white;
+  text-align: center;
+  position: relative;
+  padding-top: 128px;
+  max-width: 160px;
+  margin: 0 auto;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: url("../img/icons/icon-gift.svg");
+    width: 78px;
+    height: 80px;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+}

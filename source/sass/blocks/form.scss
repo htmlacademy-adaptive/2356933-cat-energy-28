@@ -1,0 +1,141 @@
+.form {
+  font-family: $oswald-font;
+  padding-top: 27px;
+  padding-bottom: 32px;
+}
+
+.form__introduction {
+  margin-bottom: 39px;
+}
+
+.form__title {
+  margin-top: 0;
+  margin-bottom: 37px;
+}
+
+.form__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: $basic-black;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  &--default {
+    margin-bottom: 24px;
+  }
+
+  &--bordered {
+    border-top: 1px solid $grey-border-form;
+    border-bottom: 1px solid $grey-border-form;
+    padding-top: 22px;
+    padding-bottom: 19px;
+    margin-bottom: 40px;
+  }
+
+  &--decorated {
+    padding-bottom: 35px;
+  }
+}
+
+.form__field-list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form__textarea-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 35px;
+}
+
+.form__label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &--default {
+    color: $main-text-color;
+  }
+
+  &--checkbox {
+    color: $basic-black;
+  }
+
+  &--radio {
+    color: $additional-black2;
+  }
+}
+
+.form__field {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.form__control {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  color: $main-text-color;
+  border: 1px solid $grey-border-form;
+  text-transform: uppercase;
+
+  &--text {
+    padding: 13px 20px;
+  }
+
+  &--textarea {
+    padding: 9px 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+.form__legend-wrapper {
+  border-top: 2px solid $accent-color;
+}
+
+.form__legend {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 26px;
+  color: $basic-black;
+  max-width: fit-content;
+  background-color: $basic-white;
+  position: relative;
+  transform: translateY(-50%);
+
+  &--personal {
+    margin-bottom: 7px;
+    max-width: 190px;
+  }
+
+  &--comment {
+    margin-bottom: 12px;
+  }
+
+  &--extras {
+    margin-bottom: 12px;
+  }
+}
+
+.form__button {
+  margin-bottom: 21px;
+}
+
+.form__required {
+  font-family: $lato-font;
+  font-size: 14px;
+  line-height: 16px;
+  color: $basic-black;
+  text-align: center;
+  margin: 0;
+}
