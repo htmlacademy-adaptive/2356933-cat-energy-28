@@ -1,0 +1,59 @@
+@mixin paddings {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tabletWidth) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+@mixin line {
+  position: relative;
+  padding-right: 21px;
+  background-color: $basic-white;
+
+  &::before {
+    position: absolute;
+    width: 100vw;
+    height: 2px;
+    background-color: $accent-color;
+    content: '';
+    top: 5px;
+    bottom: 0;
+    margin: auto 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  @media (min-width: $tabletWidth) {
+    padding-left: 36px;
+    padding-right: 36px;
+
+    &::before {
+      left: -30px;
+    }
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding-left: 40px;
+    padding-right: 35px;
+    width: 100%;
+
+    &::before {
+      left: -110px;
+    }
+  }
+}
+
+@mixin containerWidth {
+  @media (min-width: $desktopWidth) {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
