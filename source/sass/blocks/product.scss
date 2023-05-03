@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+
+  @media (min-width: $tabletWidth) {
+    flex-direction: column;
+  }
 }
 
 .product-card__title {

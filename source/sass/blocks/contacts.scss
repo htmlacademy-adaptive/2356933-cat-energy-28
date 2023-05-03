@@ -2,6 +2,10 @@
   &--with-background {
     background-color: $additional-background;
   }
+
+  @media (min-width: $desktopWidth) {
+    position: relative;
+  }
 }
 
 .contacts__partnership {
@@ -9,21 +13,43 @@
   justify-content: space-between;
   padding-top: 26px;
   padding-bottom: 26px;
+  background-color: $basic-white;
+
+  @media (min-width: $tabletWidth) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding-left: 80px;
+    padding-right: 60px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+  }
 }
 
-.contacts__partnership-title {
-  font-size: 16px;
-  line-height: 20px;
-  color: $additional-black;
-  text-transform: uppercase;
-  margin: 0;
-}
+.contacts__info {
+  max-width: 160px;
 
-.contacts__partnership-address {
-  line-height: 20px;
-  margin: 0;
+  &--title {
+    font-size: 16px;
+    line-height: 20px;
+    color: $additional-black;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &--address {
+    line-height: 20px;
+    margin: 0;
+  }
 }
 
 .contacts__map {
   height: 362px;
+
+  @media (min-width: $tabletWidth) {
+    height: 400px;
+  }
 }

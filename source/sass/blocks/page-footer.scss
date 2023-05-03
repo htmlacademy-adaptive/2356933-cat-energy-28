@@ -4,12 +4,22 @@
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tabletWidth) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .page-footer__logo {
   padding-bottom: 20px;
   border-bottom: 1px solid $additional-grey-border;
   justify-content: center;
+
+  @media (min-width: $tabletWidth) {
+    border-bottom: none;
+  }
 }
 
 .page-footer__social {
@@ -20,6 +30,12 @@
   padding-bottom: 23px;
   gap: 26px;
   border-bottom: 1px solid $additional-grey-border;
+
+  @media (min-width: $tabletWidth) {
+    border-bottom: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .page-footer__academy {
@@ -27,4 +43,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tabletWidth) {
+    padding-top: 0;
+  }
 }
