@@ -7,6 +7,7 @@
 .form__main-info {
   display: flex;
   flex-direction: column;
+
   @include containerWidth;
 
   @media (min-width: $desktopWidth) {

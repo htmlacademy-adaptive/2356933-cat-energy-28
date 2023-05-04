@@ -20,6 +20,7 @@
   flex-direction: column;
   gap: 25px;
   box-sizing: border-box;
+
   @include containerWidth;
 
   @media (min-width: $tabletWidth) {
