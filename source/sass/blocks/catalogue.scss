@@ -3,7 +3,7 @@
 }
 
 .catalogue__title {
-  margin: 0 0 41px 0;
+  margin-bottom: 41px;
 
   @media (min-width: $desktopWidth) {
     margin-left: auto;
@@ -29,8 +29,6 @@
     border-top: none;
     border-bottom: none;
     gap: 140px 60px;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 
   @media (min-width: $desktopWidth) {

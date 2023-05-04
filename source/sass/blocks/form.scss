@@ -113,6 +113,7 @@
   color: $main-text-color;
   border: 1px solid $grey-border-form;
   text-transform: uppercase;
+  flex-grow: 1;
 
   &--text {
     padding: 13px 20px;

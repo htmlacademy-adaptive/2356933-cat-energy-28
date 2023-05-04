@@ -3,13 +3,14 @@
   height: 256px;
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .slider__slide {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: $basic-white;
+  background-color: $grey-background;
   top: 0;
   left: 0;
   pointer-events: none;
@@ -17,6 +18,10 @@
 
   &--after {
     width: 50%;
+  }
+
+  @media (min-width: $tabletWidth) {
+    background-color: $basic-white;
   }
 }
 

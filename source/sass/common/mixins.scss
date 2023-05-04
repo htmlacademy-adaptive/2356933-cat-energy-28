@@ -52,8 +52,10 @@
 }
 
 @mixin containerWidth {
+  max-width: 708px;
+  margin: 0 auto;
+
   @media (min-width: $desktopWidth) {
     max-width: 1220px;
-    margin: 0 auto;
   }
 }
