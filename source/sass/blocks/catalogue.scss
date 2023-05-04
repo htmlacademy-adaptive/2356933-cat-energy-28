@@ -50,6 +50,7 @@
     min-width: 324px;
     padding: 39px;
     box-sizing: border-box;
+    flex-grow: 1;
 
     &:not(:last-child) {
       border-bottom: none;
