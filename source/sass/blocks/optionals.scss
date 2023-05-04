@@ -17,17 +17,22 @@
   margin-top: 0;
   margin-bottom: 36px;
   max-width: fit-content;
-  @include line;
 }
 
 .optionals__list {
   border-top: 1px solid $grey-border;
   border-bottom: 1px solid $grey-border;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tabletWidth) and (max-width: $desktopWidth - 1) {
+    border-left: 1px solid $grey-border;
+    border-right: 1px solid $grey-border;
+  }
 
   @media (min-width: $desktopWidth) {
     width: 100%;
     margin: 0;
-    border: none;
   }
 }
 
@@ -40,7 +45,6 @@
   }
 
   @media (min-width: $tabletWidth) {
-    border: 1px solid $grey-border;
     padding: 28px 38px;
     display: flex;
     flex-wrap: wrap;

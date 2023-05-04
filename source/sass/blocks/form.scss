@@ -7,6 +7,7 @@
 .form__main-info {
   display: flex;
   flex-direction: column;
+  @include containerWidth;
 
   @media (min-width: $desktopWidth) {
     flex-direction: row;
@@ -62,10 +63,11 @@
   flex-direction: column;
   gap: 14px;
 
-  &--row {
-    flex-direction: row;
-    gap: 32px 123px;
-    flex-wrap: wrap;
+  @media (min-width: $tabletWidth) {
+    &--row {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 }
 
@@ -99,7 +101,7 @@
   gap: 13px;
 
   @media (min-width: $tabletWidth) {
-    min-width: 210px;
+    min-width: 240px;
   }
 }
 
