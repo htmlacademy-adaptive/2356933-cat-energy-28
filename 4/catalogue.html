@@ -10,9 +10,7 @@
 <body class="page__body">
 <header class="page-header container">
   <a class="page-header__logo logo" href="/">
-    <img class="logo__image logo__image--mobile" src="img/logo-mobile.svg" width="42" height="47" alt="Логотип Cat Energy.">
-    <img class="logo__image logo__image--tablet" src="img/logo-tablet.svg" width="174" height="52" alt="Логотип Cat Energy.">
-    <img class="logo__image logo__image--desktop" src="img/logo-desktop.svg" width="202" height="59" alt="Логотип Cat Energy.">
+    <img class="logo__image logo__image" src="img/logo-mobile.svg" width="42" height="47" alt="Логотип Cat Energy.">
     <img class="logo__caption logo__caption--header" src="img/logo-caption.svg" width="101" height="18" alt="Надпись Cat Energy.">
   </a>
   <nav class="page-header__navigation navigation">
@@ -239,9 +237,13 @@
       </li>
     </ul>
   </section>
-  <section class="optionals container">
-    <h2 class="optionals__title title">Дополнительные товары</h2>
-    <div class="optionals__wrapper">
+  <section class="optionals">
+    <div class="optionals__title-wrapper">
+      <h2 class="optionals__title title container">
+        <span class="optionals__title-text">Дополнительные товары</span>
+      </h2>
+    </div>
+    <div class="optionals__wrapper container">
       <ul class="optionals__list list">
         <li class="optionals__item optional-card">
           <h3 class="optional-card__title title">Сахарозаменитель</h3>
@@ -307,22 +309,19 @@
         <img class="logo__caption" src="img/logo-caption.svg" width="101" height="18" alt="Cat Energy.">
         <span class="visually-hidden">Cat Energy</span>
       </a>
-      <ul class="page-footer__social list">
+      <ul class="page-footer__social social list">
         <li class="social__item">
-          <a class="social__link" href="#">
-            <img class="social__icon" src="img/icons/vkontakte.svg" alt="Вконтакте.">
+          <a class="social__link social__link--vkontakte" href="#">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">
-            <img class="social__icon" src="img/icons/youtube.svg" alt="Youtube.">
+          <a class="social__link social__link--youtube" href="#">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">
-            <img class="social__icon" src="img/icons/telegram.svg" alt="Telegram.">
+          <a class="social__link social__link--telegram" href="#">
             <span class="visually-hidden">Telegram</span>
           </a>
         </li>
