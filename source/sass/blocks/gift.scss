@@ -2,6 +2,18 @@
   padding-top: 58px;
   padding-bottom: 43px;
   background: linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)), url("../img/catalogue/gift-background.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+
+  @media (min-width: $tabletWidth) {
+    padding: 71px 124px 69px 78px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding: 55px 43px 40px;
+    justify-content: center;
+  }
 }
 
 .gift__text {
@@ -24,5 +36,32 @@
     right: 0;
     left: 0;
     margin: 0 auto;
+  }
+
+  @media (min-width: $tabletWidth) {
+    text-align: left;
+    padding-top: 0;
+    padding-left: 345px;
+    margin: 0;
+
+    &::before {
+      left: 0;
+      top: -12px;
+      margin: auto 0;
+    }
+  }
+
+  @media (min-width: $desktopWidth) {
+    text-align: center;
+    padding-top: 135px;
+    padding-left: 0;
+    margin: 0;
+
+    &::before {
+      top: 0;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+    }
   }
 }

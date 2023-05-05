@@ -1,3 +1,5 @@
+@import "mixins";
+
 body {
   margin: 0;
   font-family: $lato-font;
@@ -23,6 +25,6 @@ a {
 }
 
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
+  @include containerWidth;
+  @include paddings;
 }

@@ -1,9 +1,40 @@
 .example {
+  display: flex;
+  flex-direction: column;
   background-color: $grey-background;
   padding-top: 25px;
   padding-bottom: 40px;
+
+  @media (min-width: $tabletWidth) {
+    background-color: $basic-white;
+  }
+
+  @media (min-width: $desktopWidth) {
+    flex-direction: row;
+    gap: 224px;
+  }
+}
+
+.example__stats {
+  margin-bottom: 20px;
+
+  @media (min-width: $tabletWidth) {
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin-bottom: 0;
+  }
 }
 
 .example__title {
   margin: 0 0 40px 0;
+}
+
+.example__slider {
+  min-width: 280px;
+
+  @media (min-width: $tabletWidth) {
+    min-width: 560px;
+  }
 }

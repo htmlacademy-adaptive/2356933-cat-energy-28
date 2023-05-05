@@ -18,4 +18,14 @@
     line-height: 37px;
     color: $basic-black;
   }
+
+  @media (min-width: $tabletWidth) {
+    &--h2 {
+      font-size: 60px;
+    }
+
+    &--h3 {
+      font-size: 36px;
+    }
+  }
 }

@@ -1,5 +1,9 @@
 .programs {
   padding-bottom: 20px;
+
+  @media (min-width: $tabletWidth) {
+    padding-bottom: 45px;
+  }
 }
 
 .programs__list {
@@ -7,11 +11,29 @@
   flex-direction: column;
   gap: 20px;
   margin: 0;
+
+  @media (min-width: $tabletWidth) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    flex-direction: row;
+    gap: 80px;
+  }
 }
 
 .programs__item {
   background-color: $additional-background;
   padding: 24px 22px 22px;
+
+  @media (min-width: $tabletWidth) {
+    padding: 77px 62px 57px 52px;
+    max-width: 594px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding: 41px 61px 59px 52px;
+  }
 }
 
 .programs__wrapper {

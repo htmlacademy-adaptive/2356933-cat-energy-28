@@ -5,10 +5,35 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 13px;
+
+  @media (min-width: $desktopWidth) {
+    max-width: 140px;
+    width: 100%;
+  }
 }
 
 .optional-card__description {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
+
+  @media (min-width: $tabletWidth) {
+    gap: 50px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    max-width: 280px;
+    width: 100%;
+  }
+}
+
+.optional-card__button {
+  @media (min-width: $tabletWidth) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktopWidth) {
+    max-width: 244px;
+    font-size: 16px;
+  }
 }

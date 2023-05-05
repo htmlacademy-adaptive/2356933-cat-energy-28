@@ -1,3 +1,7 @@
 .academy__caption {
   color: $main-text-color;
+
+  @media (min-width: $tabletWidth) {
+    margin-right: 27px;
+  }
 }

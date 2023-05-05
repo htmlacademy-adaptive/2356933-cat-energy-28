@@ -1,0 +1,39 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__link {
+  position: relative;
+  padding-left: 28px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 28px;
+    height: 22px;
+  }
+
+  &--vkontakte {
+    &::before {
+      background: url("../img/icons/vkontakte.svg");
+    }
+  }
+
+  &--telegram {
+    &::before {
+      background: url("../img/icons/telegram.svg");
+    }
+  }
+
+  &--youtube {
+    &::before {
+      background: url("../img/icons/youtube.svg");
+    }
+  }
+}

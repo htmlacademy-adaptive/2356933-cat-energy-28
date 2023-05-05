@@ -1,3 +1,15 @@
+.stats {
+  @media (min-width: $tabletWidth) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 708px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    flex-direction: column;
+  }
+}
+
 .stats__list {
   display: flex;
   justify-content: space-between;
@@ -31,6 +43,10 @@
   &::after {
     right: 0;
   }
+
+  @media (min-width: $tabletWidth) {
+    min-width: 162px;
+  }
 }
 
 .stats__number {
@@ -61,4 +77,20 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tabletWidth) {
+    text-align: right;
+    max-width: 134px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    text-align: left;
+    max-width: unset;
+  }
+}
+
+.stats__legend-description {
+  @media (min-width: $desktopWidth) {
+    margin-right: 63px;
+  }
 }
