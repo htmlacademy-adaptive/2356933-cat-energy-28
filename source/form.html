@@ -33,9 +33,9 @@
     </button>
   </nav>
 </header>
-<main class="main-container">
+<main class="main-form__container">
   <form class="form" action="#" method="post" target="_blank">
-    <div class="form__introduction container">
+    <div class="form__introduction form__container">
       <h1 class="form__title title title--h1">Подбор программы</h1>
       <p class="form__text">
         Заполните анкету, и мы подберем программу питания для вашего кота
@@ -44,7 +44,7 @@
     <div class="form__main-info">
       <fieldset class="form__fieldset form__fieldset--default">
         <legend class="visually-hidden">Персональные данные</legend>
-        <ul class="form__field-list container">
+        <ul class="form__field-list form__field-list--personal form__container">
           <li class="form__field">
             <label class="form__label form__label--default" for="name">Имя:*</label>
             <input class="form__control form__control--text" type="text" name="name" placeholder="Барсик" id="name" required>
@@ -61,7 +61,7 @@
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--bordered">
         <legend class="visually-hidden">Цель</legend>
-        <ul class="form__field-list container">
+        <ul class="form__field-list form__container">
           <li class="form__field">
             <input class="form__radio" type="radio" name="goal" id="fit" value="fit" checked>
             <label class="form__label form__label--radio" for="fit">Похудение</label>
@@ -78,12 +78,12 @@
       </fieldset>
     </div>
     <fieldset class="form__fieldset form__fieldset--decorated">
-      <div class="form__legend-wrapper">
-        <legend class="form__legend form__legend--personal title">
-          Контактные данные (владельца кота)
+      <div class="form__legend-wrapper form__legend-wrapper--contacts">
+        <legend class="form__legend title form__container">
+          <span class="form__legend-text">Контактные данные (владельца кота)</span>
         </legend>
       </div>
-      <ul class="form__field-list form__field-list--row container">
+      <ul class="form__field-list form__field-list--contacts form__container">
         <li class="form__field">
           <label class="form__label form__label--default" for="email">E-mail:*</label>
           <input class="form__control form__control--text" type="email" name="email" placeholder="kuklachev@gmail.com" id="email" required>
@@ -95,16 +95,23 @@
       </ul>
     </fieldset>
     <div class="form__textarea-wrapper">
-      <div class="form__legend-wrapper">
-        <label class="form__legend form__legend--comment title" for="message">Комментарий</label>
+      <div class="form__legend-wrapper form__legend-wrapper--comment">
+        <label class="form__legend title form__container" for="message">
+          <span class="form__legend-text">Комментарий</span>
+        </label>
       </div>
-      <textarea class="form__control form__control--textarea" rows="8" name="comment" placeholder="Расскажите обо всех повадках кота" id="message"></textarea>
+      <textarea class="form__control form__control--textarea form__container" rows="8" name="comment" placeholder="Расскажите обо всех повадках кота" id="message"></textarea>
+
+      <div class="form__container">
+      </div>
     </div>
     <fieldset class="form__fieldset form__fieldset--decorated">
-      <div class="form__legend-wrapper">
-        <legend class="form__legend form__legend--extras title">Дополнительно</legend>
+      <div class="form__legend-wrapper form__legend-wrapper--extra">
+        <legend class="form__legend title form__container">
+          <span class="form__legend-text">Дополнительно</span>
+        </legend>
       </div>
-      <ul class="form__field-list form__field-list--row container">
+      <ul class="form__field-list form__field-list--row form__container">
         <li class="form__field">
           <input class="form__checkbox" type="checkbox" name="sugar" id="sugar" checked>
           <label class="form__label form__label--checkbox" for="sugar">сахарозаменитель</label>
@@ -123,7 +130,7 @@
         </li>
       </ul>
     </fieldset>
-    <div class="form__submit container">
+    <div class="form__submit form__container">
       <button class="form__button button button--primary" type="submit">Отправить заявку</button>
       <p class="form__required">* — Обязательные поля</p>
     </div>
@@ -131,7 +138,7 @@
 </main>
 <footer class="page-footer">
   <div class="page-footer__contacts contacts contacts--with-background">
-    <div class="contacts__partnership container">
+    <div class="contacts__partnership form__container">
       <p class="contacts__info contacts__info--title title">
         Приглашаем к&nbsp;сотрудничеству дилеров!
       </p>
@@ -148,7 +155,7 @@
     </div>
   </div>
   <div class="page-footer__bottom">
-    <div class="page-footer__wrapper container">
+    <div class="page-footer__wrapper form__container">
       <a class="page-footer__logo logo" href="#">
         <img class="logo__caption" src="img/logo-caption.svg" width="101" height="18" alt="Cat Energy.">
         <span class="visually-hidden">Cat Energy</span>
