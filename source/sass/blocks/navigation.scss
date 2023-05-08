@@ -31,10 +31,12 @@
 
 .navigation__list {
   margin: 0;
+  background-color: $basic-white;
 
   @media (min-width: $tabletWidth) {
     display: flex;
     gap: 33px;
+    background-color: transparent;
   }
 }
 
@@ -78,13 +80,20 @@
     }
   }
 
-  @media (min-width: $tabletWidth) {
+  @media (min-width: $desktopWidth) {
     font-size: 20px;
     line-height: 30px;
-    color: $basic-white;
+
+    .page-header--main & {
+      color: $basic-white;
+    }
 
     &--current {
-      border-color: $basic-white;
+      border-color: $accent-color;
+
+      .page-header--main & {
+        border-color: $basic-white;
+      }
     }
   }
 }

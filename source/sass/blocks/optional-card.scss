@@ -6,6 +6,12 @@
   margin-top: 0;
   margin-bottom: 13px;
 
+  @media (min-width: $tabletWidth) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+
   @media (min-width: $desktopWidth) {
     max-width: 140px;
     width: 100%;
@@ -19,6 +25,7 @@
 
   @media (min-width: $tabletWidth) {
     gap: 50px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktopWidth) {
@@ -28,12 +35,18 @@
 }
 
 .optional-card__button {
+  height: 40px;
+  font-size: 16px;
+  line-height: 20px;
+
   @media (min-width: $tabletWidth) {
+    margin-top: 23px;
     width: 100%;
   }
 
   @media (min-width: $desktopWidth) {
     max-width: 244px;
     font-size: 16px;
+    margin-top: 0;
   }
 }
