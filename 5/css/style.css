@@ -2089,8 +2089,6 @@ a {
   .form__field-list--contacts {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  .form__field-list--contacts {
     gap: 78px;
   }
 }
