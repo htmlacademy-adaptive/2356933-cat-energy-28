@@ -2254,7 +2254,7 @@ a {
   border: 2px solid #444444;
   outline: none;
 }
-.form__control:invalid {
+.form__control--error {
   border: 2px solid #ff8282;
 }
 .form__control--text {
