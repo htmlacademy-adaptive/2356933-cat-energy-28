@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 </head>
 <body class="page__body">
-<header class="page-header container">
+<header class="page-header container page-header--nojs">
   <a class="page-header__logo logo" href="#">
     <img class="logo__image logo__image" src="img/logo-mobile.svg" width="42" height="47" alt="Логотип Cat Energy.">
     <img class="logo__caption logo__caption--header" src="img/logo-caption.svg" width="101" height="18" alt="Надпись Cat Energy.">
@@ -90,51 +90,57 @@
       </li>
     </ul>
   </section>
-  <section class="example container">
-    <div class="example__info-wrapper">
-      <h2 class="example__title title title--h2">Живой пример</h2>
-      <p class="example__description text">
-        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-        изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-      </p>
-      <div class="example__stats stats">
-        <dl class="stats__list list">
-          <div class="stats__item">
-            <dt class="stats__number">
-              5 кг
-            </dt>
-            <dd class="stats__description text">
-              снижение веса
-            </dd>
-          </div>
-          <div class="stats__item">
-            <dt class="stats__number">
-              60 дней
-            </dt>
-            <dd class="stats__description text">
-              затрачено времени
-            </dd>
-          </div>
-        </dl>
-        <p class="stats__legend">
-          <span class="stats__legend-description">Затраты на питание: </span>
-          <span class="stats__legend-money">15 000 РУБ.</span>
+  <section class="example">
+    <div class="example__wrapper container">
+      <div class="example__info-wrapper">
+        <h2 class="example__title title title--h2">Живой пример</h2>
+        <p class="example__description text">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-      </div>
-    </div>
-    <div class="example__slider slider">
-      <div class="slider-wrapper">
-        <div class="slider__slide slider__slide--before">
-          <img class="slider__image" src="img/main/cat-after@1x.png" alt="Фото после." width="280" height="256" draggable="false"/>
+        <div class="example__stats stats">
+          <dl class="stats__list list">
+            <div class="stats__item">
+              <dt class="stats__number">
+                5 кг
+              </dt>
+              <dd class="stats__description text">
+                снижение веса
+              </dd>
+            </div>
+            <div class="stats__item">
+              <dt class="stats__number">
+                60 дней
+              </dt>
+              <dd class="stats__description text">
+                затрачено времени
+              </dd>
+            </div>
+          </dl>
+          <p class="stats__legend">
+            <span class="stats__legend-description">Затраты на питание: </span>
+            <span class="stats__legend-money">15 000 РУБ.</span>
+          </p>
         </div>
-        <div class="slider__slide slider__slide--after">
-          <img class="slider__image" src="img/main/cat-before@1x.png" alt="Фото до." width="280" height="256" draggable="false"/></div>
-        <div class="slider__control">
-          <svg class="slider__toggle" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-            <polygon points="0 50 37 68 37 32 0 50" style="fill:#666666"/>
-            <polygon points="100 50 64 32 64 68 100 50" style="fill:#666666"/>
-          </svg>
-          <span class="visually-hidden">Переключить слайдер</span>
+      </div>
+      <div class="example__slider slider">
+        <div class="slider-wrapper">
+          <div class="slider__slide slider__slide--before">
+            <img class="slider__image" src="img/main/cat-after@1x.png" alt="Фото после." width="280" height="256" draggable="false"/>
+          </div>
+          <div class="slider__slide slider__slide--after">
+            <img class="slider__image" src="img/main/cat-before@1x.png" alt="Фото до." width="280" height="256" draggable="false"/></div>
+          <div class="slider__control">
+<!--            <svg class="slider__toggle" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">-->
+<!--              <polygon points="0 50 37 68 37 32 0 50" style="fill:#666666"/>-->
+<!--              <polygon points="100 50 64 32 64 68 100 50" style="fill:#666666"/>-->
+<!--            </svg>-->
+            <svg class="slider__toggle" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 11L8 20L16 29V11Z" fill="#666666"/>
+              <path d="M32 20L24 11V29L32 20Z" fill="#666666"/>
+            </svg>
+            <span class="visually-hidden">Переключить слайдер</span>
+          </div>
         </div>
       </div>
     </div>
@@ -147,7 +153,8 @@
         Приглашаем к&nbsp;сотрудничеству дилеров!
       </p>
       <p class="contacts__info contacts__info--address text">
-        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        <span>ул. Большая Конюшенная, д. 19/8 </span>
+        <span>Санкт-Петербург</span>
       </p>
     </div>
     <div class="contacts__map">
@@ -181,7 +188,7 @@
           </a>
         </li>
       </ul>
-      <a class="page-footer__academy academy" href="https://htmlacademy.ru">
+      <a class="page-footer__academy academy" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="academy__caption">HTML Academy</span>
         <img class="academy__logo" src="img/htmlacademy.svg" alt="HTML Academy." width="27" height="34">
       </a>

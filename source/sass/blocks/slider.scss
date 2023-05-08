@@ -4,6 +4,11 @@
   position: relative;
   overflow: hidden;
   margin: 0 auto;
+
+  @media (min-width: $tabletWidth) {
+    width: 500px;
+    height: 512px;
+  }
 }
 
 .slider__slide {
@@ -21,7 +26,7 @@
   }
 
   @media (min-width: $tabletWidth) {
-    background-color: $basic-white;
+    background: linear-gradient(to top, $grey-background 377px, $basic-white 377px 100%);
   }
 }
 
@@ -48,13 +53,34 @@
   top: 50%;
   transform: translateY(-50%);
   border-radius: 50%;
-  background-color: transparent;
-  opacity: 0.9;
   pointer-events: auto;
+  background-color: $basic-white;
   cursor: pointer;
 
   &:hover {
-    opacity: 1;
+    border-color: $accent-color;
+
+    &::before,
+    &::after {
+      background-color: $accent-color;
+    }
+
+    path {
+      fill: $accent-color;
+    }
+  }
+
+  &:active {
+    border-color: rgba($accent-color-hover, 0.6);
+
+    &::before,
+    &::after {
+      background-color: rgba($accent-color-hover, 0.6);
+    }
+
+    path {
+      fill: rgba($accent-color-hover, 0.6);
+    }
   }
 
   &::before,
@@ -78,5 +104,12 @@
 
   &::after {
     bottom: 100%;
+  }
+
+  @media (min-width: $tabletWidth) {
+    &::before,
+    &::after {
+      height: 526px;
+    }
   }
 }

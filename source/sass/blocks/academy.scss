@@ -1,3 +1,22 @@
+.academy {
+  &:active {
+    .academy__caption {
+      opacity: 0.3;
+    }
+
+    path {
+      fill: rgba($accent-color, 0.3);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    path {
+      fill: $accent-color;
+    }
+  }
+}
+
 .academy__caption {
   color: $main-text-color;
 

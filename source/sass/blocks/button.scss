@@ -16,6 +16,15 @@
     box-sizing: border-box;
     padding: 0;
     border-width: 0;
+
+    &:hover {
+      background-color: $accent-color-hover;
+    }
+
+    &:active {
+      background-color: $accent-color-hover;
+      color: rgba($basic-white, 0.3);
+    }
   }
 
   &--secondary {
@@ -29,9 +38,22 @@
     box-sizing: border-box;
     padding: 0;
     border-width: 0;
+
+    &:hover {
+      background-color: $grey-border-catalogue;
+    }
+
+    &:active {
+      background-color: $grey-border-catalogue;
+      color: rgba($main-text-color, 0.3);
+    }
   }
 
   @media (min-width: $tabletWidth) {
     font-size: 20px;
+
+    &--primary {
+      height: 54px;
+    }
   }
 }

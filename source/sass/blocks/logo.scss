@@ -2,6 +2,14 @@
   display: flex;
   align-items: center;
   gap: 56px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .logo__image {

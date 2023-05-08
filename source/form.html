@@ -61,17 +61,17 @@
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--bordered">
         <legend class="visually-hidden">Цель</legend>
-        <ul class="form__field-list form__container">
+        <ul class="form__field-list form__field-list--radio form__container">
           <li class="form__field">
-            <input class="form__radio" type="radio" name="goal" id="fit" value="fit" checked>
+            <input class="form__radio visually-hidden" type="radio" name="goal" id="fit" value="fit" checked>
             <label class="form__label form__label--radio" for="fit">Похудение</label>
           </li>
           <li class="form__field">
-            <input class="form__radio" type="radio" name="goal" id="gain" value="gain">
+            <input class="form__radio visually-hidden" type="radio" name="goal" id="gain" value="gain">
             <label class="form__label form__label--radio" for="gain">Набор массы</label>
           </li>
           <li class="form__field">
-            <input class="form__radio" type="radio" name="goal" id="advice" value="advice">
+            <input class="form__radio visually-hidden" type="radio" name="goal" id="advice" value="advice">
             <label class="form__label form__label--radio" for="advice">Не знаю (Нужен ваш совет)</label>
           </li>
         </ul>
@@ -111,21 +111,21 @@
           <span class="form__legend-text">Дополнительно</span>
         </legend>
       </div>
-      <ul class="form__field-list form__field-list--row form__container">
-        <li class="form__field">
-          <input class="form__checkbox" type="checkbox" name="sugar" id="sugar" checked>
+      <ul class="form__field-list form__field-list--extra form__container">
+        <li class="form__field form__field--checkbox">
+          <input class="form__checkbox visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
           <label class="form__label form__label--checkbox" for="sugar">сахарозаменитель</label>
         </li>
-        <li class="form__field">
-          <input class="form__checkbox" type="checkbox" name="water" id="water">
+        <li class="form__field form__field--checkbox">
+          <input class="form__checkbox visually-hidden" type="checkbox" name="water" id="water">
           <label class="form__label form__label--checkbox" for="water">питьевая вода </label>
         </li>
-        <li class="form__field">
-          <input class="form__checkbox" type="checkbox" name="milk" id="milk">
+        <li class="form__field form__field--checkbox">
+          <input class="form__checkbox visually-hidden" type="checkbox" name="milk" id="milk">
           <label class="form__label form__label--checkbox" for="milk">молоко</label>
         </li>
-        <li class="form__field">
-          <input class="form__checkbox" type="checkbox" name="vitamins" id="vitamins">
+        <li class="form__field form__field--checkbox">
+          <input class="form__checkbox visually-hidden" type="checkbox" name="vitamins" id="vitamins">
           <label class="form__label form__label--checkbox" for="vitamins">витамины</label>
         </li>
       </ul>
@@ -143,7 +143,8 @@
         Приглашаем к&nbsp;сотрудничеству дилеров!
       </p>
       <p class="contacts__info contacts__info--address text">
-        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        <span>ул. Большая Конюшенная, д. 19/8 </span>
+        <span>Санкт-Петербург</span>
       </p>
     </div>
     <div class="contacts__map">
@@ -177,9 +178,11 @@
           </a>
         </li>
       </ul>
-      <a class="page-footer__academy academy" href="https://htmlacademy.ru">
+      <a class="page-footer__academy academy" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="academy__caption">HTML Academy</span>
-        <img class="academy__logo" src="img/htmlacademy.svg" alt="HTML Academy." width="27" height="34">
+        <svg class="academy__logo" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
+        </svg>
       </a>
       <p class="visually-hidden">Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
         href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
