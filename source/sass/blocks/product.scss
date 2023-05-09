@@ -30,7 +30,7 @@
     line-height: 24px;
     max-width: 154px;
     text-align: center;
-    margin: 0 auto 21px;
+    margin: 0 auto 17px;
   }
 
   @media (min-width: $desktopWidth) {
@@ -77,12 +77,35 @@
 .product-card__image {
   display: block;
   margin: auto;
+  width: 68px;
+  height: 86px;
+
+  &--large {
+    width: 84px;
+    height: 100px;
+  }
 
   @media (min-width: $tabletWidth) {
     position: absolute;
-    top: -100px;
+    top: -86px;
     left: 0;
     right: 0;
+    width: 163px;
+    height: 174px;
+
+    &--large {
+      width: 168px;
+      height: 200px;
+      top: -110px;
+    }
+  }
+
+  @media (min-width: $desktopWidth) {
+    top: -93px;
+
+    &--large {
+      top: -122px;
+    }
   }
 }
 

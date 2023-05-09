@@ -1,8 +1,4 @@
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 56px;
-
   &:hover {
     opacity: 0.8;
   }
@@ -13,38 +9,13 @@
 }
 
 .logo__image {
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
-
   @media (min-width: $tabletWidth) {
-    &--mobile,
-    &--desktop {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-    }
+    width: 174px;
+    height: 52px;
   }
 
   @media (min-width: $desktopWidth) {
-    &--mobile,
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
-  }
-}
-
-.logo__caption {
-  &--header {
-    @media (min-width: $tabletWidth) {
-      display: none;
-    }
+    width: 202px;
+    height: 59px;
   }
 }

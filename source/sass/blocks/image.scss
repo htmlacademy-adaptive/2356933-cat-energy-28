@@ -1,4 +1,9 @@
 .image {
-  height: auto;
-  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+
+  @media (min-width: $tabletWidth) {
+    width: 100%;
+  }
 }
