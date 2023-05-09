@@ -16,7 +16,6 @@ document.body.addEventListener('mouseleave',function(){
 document.body.addEventListener('mousemove',function(e){
   if (!active) return;
   let x = e.pageX;
-  console.log(x);
   x -= document.querySelector('.slider-wrapper').getBoundingClientRect().left;
   scrollIt(x);
 });
@@ -26,8 +25,6 @@ function scrollIt(x){
   document.querySelector('.slider__slide--after').style.width = transform+"px";
   document.querySelector('.slider__control').style.left = transform-18+"px";
 }
-
-scrollIt(140);
 
 document.querySelector('.slider__control').addEventListener('touchstart',function(){
   active = true;

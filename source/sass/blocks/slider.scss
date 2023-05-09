@@ -6,7 +6,7 @@
   margin: 0 auto;
 
   @media (min-width: $tabletWidth) {
-    width: 500px;
+    width: 560px;
     height: 512px;
   }
 }
@@ -36,6 +36,16 @@
 
 .slider__image {
   height: 100%;
+  object-fit: cover;
+  display: block;
+
+  &--after {
+    width: 100%;
+  }
+
+  &--before {
+    width: auto;
+  }
 }
 
 .scrolling {
@@ -53,7 +63,7 @@
   width: 36px;
   height: 36px;
   position: absolute;
-  left: 100px;
+  left: 120px;
   top: 50%;
   transform: translateY(-50%);
   border-radius: 50%;
@@ -111,9 +121,11 @@
   }
 
   @media (min-width: $tabletWidth) {
+    left: 260px;
+
     &::before,
     &::after {
-      height: 526px;
+      height: 238px;
     }
   }
 }

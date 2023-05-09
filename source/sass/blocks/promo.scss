@@ -16,8 +16,7 @@
 
   @media (min-resolution: 2dppx) {
     &::before {
-      background-image: url("../img/main/index-background-mobile@2x.jpg");
-      background-size: 640px auto;
+      background: linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)), url("../img/main/index-background-mobile@2x.jpg") no-repeat 50% 0;
     }
   }
 
@@ -44,8 +43,7 @@
 
     @media (min-resolution: 2dppx) {
       &::before {
-        background-image: url("../img/main/index-background-desktop@2x.jpg");
-        background-size: 1440px auto;
+        background: linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)), url("../img/main/index-background-desktop@2x.jpg") no-repeat top right;
       }
     }
   }
@@ -107,7 +105,7 @@
   }
 }
 
-.promo__image {
+.promo__image-wrapper {
   display: block;
   margin: 0 auto;
 
