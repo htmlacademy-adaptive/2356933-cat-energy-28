@@ -31,3 +31,16 @@
   //  }
   //}
 }
+
+.social__icon {
+  color: $icon-color;
+
+  &:hover {
+    color: $accent-color;
+  }
+
+  &:active {
+    color: rgba($accent-color, 0.3);
+  }
+}
+

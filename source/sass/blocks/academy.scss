@@ -4,15 +4,16 @@
       opacity: 0.3;
     }
 
-    path {
-      fill: rgba($accent-color, 0.3);
+    .academy__logo {
+      opacity: 0.3;
+      color: $accent-color;
     }
   }
 
   &:hover,
   &:focus {
-    path {
-      fill: $accent-color;
+    .academy__logo {
+      color: $accent-color;
     }
   }
 }
@@ -23,4 +24,8 @@
   @media (min-width: $tabletWidth) {
     margin-right: 27px;
   }
+}
+
+.academy__logo {
+  color: $icon-color;
 }
