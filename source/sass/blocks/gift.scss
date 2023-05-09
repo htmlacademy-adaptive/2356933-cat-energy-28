@@ -1,9 +1,12 @@
 .gift {
   padding-top: 58px;
   padding-bottom: 43px;
-  background: linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)), url("../img/catalogue/gift-background.jpg") no-repeat center center;
-  background-size: cover;
+  background: linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)), url("../img/catalogue/gift-background@1x.jpg") no-repeat center center/cover;
   display: flex;
+
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)), url("../img/catalogue/gift-background@2x.jpg") no-repeat center center/cover;
+  }
 
   @media (min-width: $tabletWidth) {
     padding: 71px 124px 69px 78px;

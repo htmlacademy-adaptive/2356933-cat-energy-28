@@ -7,3 +7,15 @@
     opacity: 0.6;
   }
 }
+
+.logo__image {
+  @media (min-width: $tabletWidth) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    width: 202px;
+    height: 59px;
+  }
+}
