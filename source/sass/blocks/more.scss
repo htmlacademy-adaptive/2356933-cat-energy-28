@@ -6,6 +6,13 @@
   text-transform: uppercase;
   margin-top: 23px;
   margin-bottom: 8px;
+
+  @media (min-width: $tabletWidth) {
+    font-size: 20px;
+    line-height: 22px;
+    max-width: 142px;
+    margin: 0 auto 23px;
+  }
 }
 
 .more__text {
@@ -13,6 +20,14 @@
   line-height: 16px;
   color: $main-text-color;
   text-align: center;
+  margin-top: 0;
+
+  @media (min-width: $tabletWidth) {
+    font-size: 16px;
+    line-height: 18px;
+    max-width: 174px;
+    margin: 0 auto 87px;
+  }
 }
 
 .more__plus {
@@ -44,4 +59,16 @@
     width: 2px;
     height: 100%;
   }
+
+  @media (min-width: $tabletWidth) {
+    margin-top: 0;
+    margin-bottom: 50px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.more__button {
+  font-size: 16px;
+  line-height: 20px;
 }

@@ -4,6 +4,10 @@
   @media (min-width: $tabletWidth) {
     padding-bottom: 45px;
   }
+
+  @media (min-width: $desktopWidth) {
+    padding-bottom: 73px;
+  }
 }
 
 .programs__list {

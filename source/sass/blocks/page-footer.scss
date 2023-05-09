@@ -12,6 +12,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 57px 30px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding-top: 71px;
+    padding-bottom: 71px;
   }
 }
 
@@ -19,9 +25,11 @@
   padding-bottom: 20px;
   border-bottom: 1px solid $additional-grey-border;
   justify-content: center;
+  height: 24px;
 
   @media (min-width: $tabletWidth) {
     border-bottom: none;
+    padding-bottom: 0;
   }
 }
 

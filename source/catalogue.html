@@ -1,3 +1,4 @@
+<!-- класс при отсутствии js - page-header--nojs -->
 <!DOCTYPE html>
 <html class="page" lang="ru">
 <head>
@@ -287,12 +288,15 @@
 <footer class="page-footer">
   <div class="page-footer__contacts contacts contacts--with-background">
     <div class="contacts__partnership container">
-      <p class="contacts__info contacts__info--title title">
-        Приглашаем к&nbsp;сотрудничеству дилеров!
-      </p>
-      <p class="contacts__info contacts__info--address text">
-        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-      </p>
+      <div class="contacts__partnership-wrapper">
+        <p class="contacts__info contacts__info--title title">
+          Приглашаем к&nbsp;сотрудничеству дилеров!
+        </p>
+        <p class="contacts__info contacts__info--address text">
+          <span>ул. Большая Конюшенная, д. 19/8 </span>
+          <span>Санкт-Петербург</span>
+        </p>
+      </div>
     </div>
     <div class="contacts__map">
       <span class="visually-hidden">Cat Energy на карте</span>
@@ -304,7 +308,7 @@
   </div>
   <div class="page-footer__bottom">
     <div class="page-footer__wrapper container">
-      <a class="page-footer__logo logo" href="#">
+      <a class="page-footer__logo logo" href="/">
         <img class="logo__caption" src="img/logo-caption.svg" width="101" height="18" alt="Cat Energy.">
         <span class="visually-hidden">Cat Energy</span>
       </a>
@@ -325,7 +329,7 @@
           </a>
         </li>
       </ul>
-      <a class="page-footer__academy academy" href="https://htmlacademy.ru">
+      <a class="page-footer__academy academy" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="academy__caption">HTML Academy</span>
         <img class="academy__logo" src="img/htmlacademy.svg" alt="HTML Academy." width="27" height="34">
       </a>

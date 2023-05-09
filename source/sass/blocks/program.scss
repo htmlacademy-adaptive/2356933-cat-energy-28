@@ -77,6 +77,7 @@
   @media (min-width: $desktopWidth) {
     padding-left: 162px;
     padding-bottom: 73px;
+    padding-top: 33px;
 
     &::before {
       width: 100px;
@@ -114,8 +115,6 @@
     border-bottom: none;
     padding-bottom: 0;
     max-width: 340px;
-    font-size: 16px;
-    line-height: 24px;
     color: $basic-black;
   }
 
@@ -128,7 +127,7 @@
   color: $basic-black;
   position: relative;
   margin-top: 19px;
-  padding-right: 30px;
+  padding-right: 39px;
 
   &::before {
     position: absolute;
@@ -144,5 +143,10 @@
 
   @media (min-width: $tabletWidth) {
     margin-top: 52px;
+    padding-right: 49px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin-top: 31px;
   }
 }

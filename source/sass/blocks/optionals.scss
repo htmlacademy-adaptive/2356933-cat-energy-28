@@ -1,12 +1,17 @@
 .optionals {
   padding-top: 25px;
   padding-bottom: 35px;
+
+  @media (min-width: $tabletWidth) {
+    padding-bottom: 76px;
+    padding-top: 68px;
+  }
 }
 
 .optionals__wrapper {
   margin-top: 36px;
 
-  @media (min-width: $desktopWidth) {
+  @media (min-width: $tabletWidth) {
     margin-top: 80px;
   }
 
@@ -39,6 +44,11 @@
 
   @media (max-width: $tabletWidth - 1) {
     padding-left: 0;
+  }
+
+  @media (min-width: $tabletWidth) {
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
@@ -95,6 +105,10 @@
 
 .optionals__gift {
   margin-top: 35px;
+
+  @media (min-width: $tabletWidth) {
+    margin-top: 70px;
+  }
 
   @media (min-width: $desktopWidth) {
     margin-top: 0;

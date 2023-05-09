@@ -1,13 +1,25 @@
 .example {
-  display: flex;
-  flex-direction: column;
   background-color: $grey-background;
   padding-top: 25px;
   padding-bottom: 40px;
 
   @media (min-width: $tabletWidth) {
-    background-color: $basic-white;
+    background: linear-gradient(to top, $grey-background 462px, $basic-white 462px 100%);
+    border-top: 1px solid $grey-additional-background;
+    padding-top: 43px;
+    padding-bottom: 101px;
   }
+
+  @media (min-width: $desktopWidth) {
+    border-top: none;
+    padding-top: 20px;
+    padding-bottom: 75px;
+  }
+}
+
+.example__wrapper {
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $desktopWidth) {
     flex-direction: row;
@@ -19,7 +31,7 @@
   margin-bottom: 20px;
 
   @media (min-width: $tabletWidth) {
-    margin-bottom: 90px;
+    margin-bottom: 99px;
   }
 
   @media (min-width: $desktopWidth) {
@@ -29,6 +41,14 @@
 
 .example__title {
   margin: 0 0 40px 0;
+
+  @media (min-width: $tabletWidth) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin-bottom: 148px;
+  }
 }
 
 .example__slider {
@@ -36,5 +56,18 @@
 
   @media (min-width: $tabletWidth) {
     min-width: 560px;
+  }
+}
+
+.example__description {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tabletWidth) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin-bottom: 66px;
   }
 }
