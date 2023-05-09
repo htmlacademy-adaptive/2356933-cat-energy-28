@@ -84,6 +84,14 @@
     left: 0;
     right: 0;
   }
+
+  @media (min-width: $desktopWidth) {
+    top: -182px;
+
+    &--large {
+      top: -192px;
+    }
+  }
 }
 
 .product-card__button {
