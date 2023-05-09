@@ -3,10 +3,72 @@
   padding-bottom: 29px;
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 70px;
+
+  @media (min-width: $tabletWidth) {
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding-bottom: 73px;
+    padding-top: 33px;
+  }
+}
+
+.program__icon {
+  position: absolute;
+
+  &--slim {
+    width: 35px;
+    height: 50px;
+    left: 10px;
+  }
+
+  &--pro {
+    width: 67px;
+    height: 28px;
+    left: -13px;
+    top: 10px;
+  }
+
+  @media (min-width: $tabletWidth) {
+    &--slim {
+      width: 140px;
+      height: 194px;
+      left: auto;
+      right: 20px;
+      top: 13px;
+    }
+
+    &--pro {
+      width: 268px;
+      height: 112px;
+      left: auto;
+      top: 70px;
+      right: -20px;
+    }
+  }
+
+  @media (min-width: $desktopWidth) {
+    &--slim {
+      width: 70px;
+      height: 97px;
+      left: 20px;
+      right: auto;
+    }
+
+    &--pro {
+      width: 134px;
+      height: 56px;
+      left: -30px;
+      top: 24px;
+      right: auto;
+    }
+  }
+}
+
+.program__title-wrapper {
+  padding-left: 69px;
   position: relative;
-  display: flex;
-  align-items: center;
 
   &::before {
     position: absolute;
@@ -18,31 +80,7 @@
     left: 0;
   }
 
-  &::after {
-    position: absolute;
-    content: "";
-  }
-
-  &--slim {
-    &::after {
-      background: url("../img/icons/cat-slim.svg") no-repeat center center/cover;
-      width: 35px;
-      height: 50px;
-      left: 9px;
-    }
-  }
-
-  &--pro {
-    &::after {
-      background: url("../img/icons/cat-pro.svg") no-repeat center center/cover;
-      width: 67px;
-      height: 28px;
-      left: -15px;
-    }
-  }
-
   @media (min-width: $tabletWidth) {
-    padding-bottom: 24px;
     padding-left: 0;
 
     &::before {
@@ -52,56 +90,16 @@
       width: 200px;
       height: 200px;
     }
-
-    &--slim {
-      &::after {
-        width: 140px;
-        height: 194px;
-        right: 33px;
-        left: unset;
-        top: 12px;
-      }
-    }
-
-    &--pro {
-      &::after {
-        width: 268px;
-        height: 112px;
-        right: -33px;
-        left: unset;
-        top: 64px;
-      }
-    }
   }
 
   @media (min-width: $desktopWidth) {
     padding-left: 162px;
-    padding-bottom: 73px;
-    padding-top: 33px;
 
     &::before {
       width: 100px;
       height: 100px;
       top: 0;
       left: 0;
-    }
-
-    &--slim {
-      &::after {
-        width: 70px;
-        height: 97px;
-        left: 21px;
-        top: 0;
-      }
-    }
-
-    &--pro {
-      &::after {
-        width: 134px;
-        height: 56px;
-        left: -16px;
-        top: 24px;
-      }
     }
   }
 }
