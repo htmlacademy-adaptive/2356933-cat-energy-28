@@ -24,8 +24,8 @@
 .page-footer__logo {
   padding-bottom: 20px;
   border-bottom: 1px solid $additional-grey-border;
-  justify-content: center;
   height: 24px;
+  text-align: center;
 
   @media (min-width: $tabletWidth) {
     border-bottom: none;

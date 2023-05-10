@@ -126,25 +126,46 @@
   position: relative;
   margin-top: 19px;
   padding-right: 39px;
+  transition: padding-right 0.3s ease-in-out;
 
-  &::before {
-    position: absolute;
-    content: "";
-    background: url("../img/icons/icon-arrow.svg") no-repeat;
-    width: 24px;
-    height: 12px;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+  &:hover,
+  &:active {
+    padding-right: 47px;
+
+    .program__link-icon {
+      width: 32px;
+    }
+  }
+
+  &:active {
+    .program__link-icon {
+      color: $basic-black;
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tabletWidth) {
     margin-top: 52px;
     padding-right: 49px;
+
+    &:hover,
+    &:active {
+      padding-right: 57px;
+    }
   }
 
   @media (min-width: $desktopWidth) {
     margin-top: 31px;
   }
+}
+
+.program__link-icon {
+  position: absolute;
+  width: 24px;
+  height: 12px;
+  transition: width 0.3s ease-in-out;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto 0;
 }

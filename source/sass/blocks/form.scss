@@ -361,6 +361,7 @@
   flex-grow: 1;
   box-sizing: border-box;
   position: relative;
+  appearance: textfield;
 
   &:hover {
     border-color: $grey-border;

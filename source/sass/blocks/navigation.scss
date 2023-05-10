@@ -64,6 +64,15 @@
   padding-top: 22px;
   padding-bottom: 24px;
   text-transform: uppercase;
+  transition: opacity 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &--current {
     pointer-events: none;
