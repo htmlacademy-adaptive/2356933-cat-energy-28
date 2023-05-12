@@ -9,6 +9,9 @@
 }
 
 .logo__image {
+  width: 191px;
+  height: 40px;
+
   @media (min-width: $tabletWidth) {
     width: 174px;
     height: 52px;
@@ -18,4 +21,9 @@
     width: 202px;
     height: 59px;
   }
+}
+
+.logo__caption {
+  width: 128px;
+  height: 24px;
 }

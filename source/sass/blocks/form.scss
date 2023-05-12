@@ -311,44 +311,16 @@
   flex-grow: 1;
   position: relative;
 
-  &--email,
-  &--phone {
-    &::before {
-      position: absolute;
-      content: "";
-      right: 16px;
-      z-index: 1;
-    }
-  }
-
-  &--email {
-    &::before {
-      width: 17px;
-      height: 13px;
-      background: url("../img/icons/email.svg") no-repeat center center;
-    }
-  }
-
-  &--phone {
-    &::before {
-      width: 15px;
-      height: 15px;
-      background: url("../img/icons/phone.svg") no-repeat center center;
-    }
-  }
-
   @media (min-width: $tabletWidth) {
     &--checkbox {
       flex-basis: 17%;
     }
-
-    &--email,
-    &--phone {
-      &::before {
-        right: 20px;
-      }
-    }
   }
+}
+
+.form__field-icon {
+  position: absolute;
+  right: 20px;
 }
 
 .form__control {
@@ -361,19 +333,25 @@
   flex-grow: 1;
   box-sizing: border-box;
   position: relative;
-  appearance: textfield;
 
   &:hover {
     border-color: $grey-border;
   }
 
   &:focus {
-    border: 2px solid $main-text-color;
-    outline: none;
+    outline: 2px solid $main-text-color;
+
+    & + .form__field-icon {
+      color: $accent-color;
+    }
   }
 
   &--error {
-    border: 2px solid $error-input;
+    outline: 2px solid $error-input;
+
+    & + .form__field-icon {
+      color: $error-input;
+    }
   }
 
   &--text {

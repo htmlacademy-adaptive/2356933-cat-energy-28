@@ -1,6 +1,6 @@
 .example {
   background-color: $grey-background;
-  padding-top: 25px;
+  padding-top: 26px;
   padding-bottom: 40px;
 
   @media (min-width: $tabletWidth) {
@@ -40,7 +40,7 @@
 }
 
 .example__title {
-  margin: 0 0 40px 0;
+  margin: 0 0 43px 0;
 
   @media (min-width: $tabletWidth) {
     margin-bottom: 63px;

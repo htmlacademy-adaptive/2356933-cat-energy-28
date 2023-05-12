@@ -1,6 +1,6 @@
 .page-header {
   padding-top: 10px;
-  padding-bottom: 17px;
+  padding-bottom: 14px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -13,6 +13,8 @@
   }
 
   @media (max-width: $tabletWidth - 1px) {
+    background-color: $basic-white;
+
     &.page-header--nojs {
       flex-direction: column;
       padding-bottom: 0;
