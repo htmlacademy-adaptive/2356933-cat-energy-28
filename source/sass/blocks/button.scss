@@ -10,12 +10,12 @@
     justify-content: center;
     align-items: center;
     background-color: $accent-color;
-    height: 40px;
+    min-height: 40px;
     width: 100%;
     color: $basic-white;
     border-color: $accent-color;
     box-sizing: border-box;
-    padding: 0;
+    padding: 10px;
     border-width: 0;
 
     &:hover {
@@ -32,12 +32,12 @@
     justify-content: center;
     align-items: center;
     background-color: $additional-background;
-    height: 40px;
+    min-height: 40px;
     width: 100%;
     color: $main-text-color;
     border-color: $additional-background;
     box-sizing: border-box;
-    padding: 0;
+    padding: 10px;
     border-width: 0;
 
     &:hover {
@@ -60,7 +60,7 @@
     font-size: 20px;
 
     &--primary {
-      height: 54px;
+      min-height: 54px;
     }
   }
 }
