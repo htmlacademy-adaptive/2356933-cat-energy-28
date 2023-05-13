@@ -92,6 +92,8 @@
   @media (min-width: $desktopWidth) {
     font-size: 20px;
     line-height: 30px;
+    padding-top: 12px;
+    padding-bottom: 6px;
 
     .page-header--main & {
       color: $basic-white;

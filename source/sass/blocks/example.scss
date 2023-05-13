@@ -4,13 +4,14 @@
   padding-bottom: 40px;
 
   @media (min-width: $tabletWidth) {
-    background: linear-gradient(to top, $grey-background 462px, $basic-white 462px 100%);
+    background: linear-gradient(to top, $grey-background 458px, $basic-white 458px 100%);
     border-top: 1px solid $grey-additional-background;
     padding-top: 43px;
-    padding-bottom: 101px;
+    padding-bottom: 104px;
   }
 
   @media (min-width: $desktopWidth) {
+    background: linear-gradient(to top, $grey-background 462px, $basic-white 462px 100%);
     border-top: none;
     padding-top: 20px;
     padding-bottom: 75px;

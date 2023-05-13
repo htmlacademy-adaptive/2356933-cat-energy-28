@@ -5,12 +5,12 @@
   margin-bottom: 0;
 
   @media (min-width: $tabletWidth) {
-    padding-bottom: 24px;
+    padding-bottom: 22px;
   }
 
   @media (min-width: $desktopWidth) {
     padding-bottom: 73px;
-    padding-top: 33px;
+    padding-top: 35px;
   }
 }
 
@@ -36,16 +36,16 @@
       width: 140px;
       height: 194px;
       left: auto;
-      right: 20px;
-      top: 13px;
+      right: 30px;
+      top: 5px;
     }
 
     &--pro {
       width: 268px;
       height: 112px;
       left: auto;
-      top: 70px;
-      right: -20px;
+      top: 59px;
+      right: -35px;
     }
   }
 
@@ -53,15 +53,16 @@
     &--slim {
       width: 70px;
       height: 97px;
-      left: 20px;
+      left: 14px;
       right: auto;
+      top: 0;
     }
 
     &--pro {
       width: 134px;
       height: 56px;
-      left: -30px;
-      top: 24px;
+      left: -19px;
+      top: 26px;
       right: auto;
     }
   }
@@ -86,11 +87,11 @@
     padding-left: 0;
 
     &::before {
-      right: 0;
-      top: 25px;
       left: unset;
       width: 200px;
       height: 200px;
+      right: -1px;
+      top: 14px;
     }
   }
 
@@ -100,7 +101,7 @@
     &::before {
       width: 100px;
       height: 100px;
-      top: 0;
+      top: 5px;
       left: 0;
     }
   }
@@ -134,10 +135,6 @@
   &:hover,
   &:active {
     padding-right: 47px;
-
-    //.program__link-icon {
-    //  width: 32px;
-    //}
   }
 
   &:active {
@@ -148,7 +145,7 @@
   }
 
   @media (min-width: $tabletWidth) {
-    margin-top: 52px;
+    margin-top: 57px;
     padding-right: 49px;
 
     &:hover,

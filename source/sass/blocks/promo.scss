@@ -28,11 +28,11 @@
   }
 
   @media (min-width: $desktopWidth) {
-    padding-top: 114px;
-    padding-bottom: 254px;
+    padding-top: 111px;
+    padding-bottom: 267px;
 
     &::before {
-      right: 0;
+      right: -14px;
       top: -113px;
       height: 694px;
       width: 51%;
@@ -55,9 +55,13 @@
     padding-left: 117px;
   }
 
+  @media (min-width: $tabletWidth) and (max-width: $desktopWidth - 1px) {
+    padding-bottom: 506px;
+  }
+
   @media (min-width: $desktopWidth) {
     grid-template-columns: 1fr 1fr;
-    padding-left: 135px;
+    padding-left: 160px;
     position: relative;
   }
 }
@@ -109,21 +113,24 @@
   margin: 0 auto;
 
   @media (min-width: $tabletWidth) {
-    grid-row: 4/5;
-    margin: 0;
+    position: absolute;
+    width: 708px;
+    height: 609px;
+    right: 30px;
+    top: 264px;
   }
 
   @media (min-width: $desktopWidth) {
-    position: absolute;
     width: 552px;
     height: 499px;
-    right: 256px;
-    top: -361px;
+    right: 301px;
+    top: -84px;
   }
 }
 
 .promo__button {
   font-size: 14px;
+  position: relative;
 
   @media (max-width: $tabletWidth - 1px) {
     margin-top: 3px;

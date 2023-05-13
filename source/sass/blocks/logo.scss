@@ -26,4 +26,9 @@
 .logo__caption {
   width: 128px;
   height: 24px;
+
+  @media (min-width: $tabletWidth) {
+    width: 144px;
+    height: 26px;
+  }
 }
