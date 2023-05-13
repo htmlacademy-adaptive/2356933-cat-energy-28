@@ -32,10 +32,10 @@
     padding-bottom: 267px;
 
     &::before {
-      right: -14px;
+      right: 0;
       top: -113px;
       height: 694px;
-      width: 51%;
+      width: 50%;
       background: linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)), url("../img/main/index-background-desktop.jpg") no-repeat top right/cover;
       background-size: cover;
     }
@@ -53,15 +53,13 @@
 
   @media (min-width: $tabletWidth) {
     padding-left: 117px;
-  }
-
-  @media (min-width: $tabletWidth) and (max-width: $desktopWidth - 1px) {
     padding-bottom: 506px;
   }
 
   @media (min-width: $desktopWidth) {
     grid-template-columns: 1fr 1fr;
     padding-left: 160px;
+    padding-bottom: 0;
     position: relative;
   }
 }
