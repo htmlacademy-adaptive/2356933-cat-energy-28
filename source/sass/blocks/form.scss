@@ -128,7 +128,7 @@
     }
 
     &--decorated {
-      padding-bottom: 61px;
+      padding-bottom: 58px;
     }
   }
 
@@ -599,13 +599,14 @@
 
   @media (min-width: $tabletWidth) {
     margin-bottom: 0;
-    margin-top: 0;
-    height: 52px;
+    margin-top: 4px;
+    min-height: 52px;
     max-width: 284px;
   }
 
   @media (min-width: $desktopWidth) {
     max-width: 568px;
+    margin-top: 0;
   }
 }
 

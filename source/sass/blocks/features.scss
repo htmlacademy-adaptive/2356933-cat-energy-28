@@ -114,21 +114,21 @@
 
   @media (min-width: $tabletWidth) {
     position: relative;
-    max-width: 224px;
+    max-width: 244px;
 
     &::before {
       position: absolute;
       content: counter(items);
       font: 400 280px/1 $oswald-font;
       color: $additional-background;
-      right: -24px;
+      right: -3px;
       bottom: -57px;
       z-index: -1;
     }
 
     &--first {
       &::before {
-        right: 0;
+        right: 18px;
       }
     }
   }

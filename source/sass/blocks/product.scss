@@ -3,7 +3,8 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 19px 20px 24px;
+  //padding: 19px 20px 24px;
+  padding: 12px 20px 17px;
 
   @media (min-width: $tabletWidth) {
     flex-direction: column;
@@ -83,13 +84,13 @@
 .product-card__image {
   display: block;
   margin: auto;
-  width: 68px;
-  height: 86px;
-
-  &--large {
-    width: 84px;
-    height: 100px;
-  }
+  //width: 68px;
+  //height: 86px;
+  //
+  //&--large {
+  //  width: 84px;
+  //  height: 100px;
+  //}
 
   @media (min-width: $tabletWidth) {
     position: absolute;
@@ -116,12 +117,14 @@
 }
 
 .product-card__button {
-  margin-top: 22px;
+  margin-top: 14px;
+  margin-bottom: 8px;
   min-height: 40px;
   font-size: 16px;
   line-height: 20px;
 
   @media (min-width: $tabletWidth) {
     margin-top: 33px;
+    margin-bottom: 0;
   }
 }
