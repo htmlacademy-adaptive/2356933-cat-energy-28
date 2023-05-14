@@ -1,4 +1,3 @@
-<!-- класс при отсутствии js - page-header--nojs -->
 <!DOCTYPE html>
 <html class="page" lang="ru">
 <head>
@@ -12,12 +11,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 </head>
 <body class="page__body">
-<header class="page-header page-header--main page-header--nojs container ">
+<!-- класс при отсутствии js - page-header--nojs -->
+<header class="page-header page-header--nojs page-header--main container ">
   <a class="page-header__logo logo" href="/">
     <picture>
       <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
       <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-      <img class="logo__image image" src="img/logo-mobile.svg" width="238" height="47" alt="Логотип Cat Energy.">
+      <img class="logo__image" src="img/logo-mobile.svg" width="238" height="47" alt="Логотип Cat Energy.">
     </picture>
   </a>
   <nav class="page-header__navigation navigation">
@@ -263,6 +263,7 @@
     </div>
   </div>
 </footer>
-<script src="js/script.min.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/slider.js"></script>
 </body>
 </html>
