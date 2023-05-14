@@ -517,7 +517,7 @@ a {
 }
 @media (min-width: 768px) {
   .contacts__partnership-wrapper {
-    padding: 60px 40px;
+    padding: 56px 40px 61px;
   }
 }
 @media (min-width: 1440px) {
@@ -548,6 +548,7 @@ a {
   .contacts__info--title {
     font-size: 20px;
     line-height: 26px;
+    padding-top: 2px;
   }
   .contacts__info--address {
     font-size: 16px;
@@ -1133,19 +1134,19 @@ a {
 @media (min-width: 768px) {
   .features__description {
     position: relative;
-    max-width: 224px;
+    max-width: 244px;
   }
   .features__description::before {
     position: absolute;
     content: counter(items);
     font: 400 280px/1 "Oswald", "Arial", sans-serif;
     color: #f2f2f2;
-    right: -24px;
+    right: -3px;
     bottom: -57px;
     z-index: -1;
   }
   .features__description--first::before {
-    right: 0;
+    right: 18px;
   }
 }
 @media (min-width: 1440px) {
@@ -1615,7 +1616,7 @@ a {
 }
 
 .catalogue__more {
-  padding: 23px 20px 25px;
+  padding: 25px 20px;
 }
 @media (min-width: 768px) {
   .catalogue__more {
@@ -1632,7 +1633,7 @@ a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 19px 20px 24px;
+  padding: 12px 20px 17px;
 }
 @media (min-width: 768px) {
   .product-card__wrapper {
@@ -1718,12 +1719,6 @@ a {
 .product-card__image {
   display: block;
   margin: auto;
-  width: 68px;
-  height: 86px;
-}
-.product-card__image--large {
-  width: 84px;
-  height: 100px;
 }
 @media (min-width: 768px) {
   .product-card__image {
@@ -1750,7 +1745,8 @@ a {
 }
 
 .product-card__button {
-  margin-top: 22px;
+  margin-top: 14px;
+  margin-bottom: 8px;
   min-height: 40px;
   font-size: 16px;
   line-height: 20px;
@@ -1758,6 +1754,7 @@ a {
 @media (min-width: 768px) {
   .product-card__button {
     margin-top: 33px;
+    margin-bottom: 0;
   }
 }
 
@@ -2255,7 +2252,7 @@ a {
     margin-bottom: 72px;
   }
   .form__fieldset--decorated {
-    padding-bottom: 61px;
+    padding-bottom: 58px;
   }
 }
 @media (min-width: 1440px) {
@@ -2649,14 +2646,15 @@ a {
 @media (min-width: 768px) {
   .form__button {
     margin-bottom: 0;
-    margin-top: 0;
-    height: 52px;
+    margin-top: 4px;
+    min-height: 52px;
     max-width: 284px;
   }
 }
 @media (min-width: 1440px) {
   .form__button {
     max-width: 568px;
+    margin-top: 0;
   }
 }
 
