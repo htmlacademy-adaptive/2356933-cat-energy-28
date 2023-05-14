@@ -16,7 +16,7 @@
   }
 
   @media (min-width: $desktopWidth) {
-    padding-top: 71px;
+    padding-top: 69px;
     padding-bottom: 71px;
   }
 }
@@ -24,8 +24,8 @@
 .page-footer__logo {
   padding-bottom: 20px;
   border-bottom: 1px solid $additional-grey-border;
-  justify-content: center;
-  height: 24px;
+  height: 23px;
+  text-align: center;
 
   @media (min-width: $tabletWidth) {
     border-bottom: none;
@@ -37,15 +37,16 @@
   display: flex;
   justify-content: center;
   margin: 0;
-  padding-top: 23px;
-  padding-bottom: 23px;
-  gap: 26px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  gap: 24px;
   border-bottom: 1px solid $additional-grey-border;
 
   @media (min-width: $tabletWidth) {
     border-bottom: none;
-    padding-top: 0;
     padding-bottom: 0;
+    padding-top: 5px;
+    padding-left: 24px;
   }
 }
 

@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $desktopWidth) {
-    max-width: 140px;
+    max-width: 281px;
     width: 100%;
   }
 }
@@ -21,7 +21,7 @@
 .optional-card__description {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   @media (min-width: $tabletWidth) {
     gap: 50px;
@@ -31,11 +31,12 @@
   @media (min-width: $desktopWidth) {
     max-width: 280px;
     width: 100%;
+    margin-top: 2px;
   }
 }
 
 .optional-card__button {
-  height: 40px;
+  min-height: 40px;
   font-size: 16px;
   line-height: 20px;
 

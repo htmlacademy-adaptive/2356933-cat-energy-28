@@ -15,7 +15,7 @@
 
   &.navigation__wrapper--active {
     transform: translateY(0);
-    top: 75px;
+    top: 68px;
   }
 
   .page-header--nojs & {
@@ -35,7 +35,7 @@
 
   @media (min-width: $tabletWidth) {
     display: flex;
-    gap: 33px;
+    gap: 36px;
     background-color: transparent;
   }
 }
@@ -64,6 +64,15 @@
   padding-top: 22px;
   padding-bottom: 24px;
   text-transform: uppercase;
+  transition: opacity 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &--current {
     pointer-events: none;
@@ -71,8 +80,8 @@
 
   @media (min-width: $tabletWidth) {
     font-size: 18px;
-    padding-top: 10px;
-    padding-bottom: 6px;
+    padding-top: 20px;
+    padding-bottom: 11px;
     font-weight: 400;
 
     &--current {
@@ -83,6 +92,8 @@
   @media (min-width: $desktopWidth) {
     font-size: 20px;
     line-height: 30px;
+    padding-top: 12px;
+    padding-bottom: 6px;
 
     .page-header--main & {
       color: $basic-white;
