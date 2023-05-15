@@ -480,7 +480,7 @@
   &:checked + .form__label--checkbox {
     &::after {
       opacity: 1;
-      background: url("../img/icons/checkbox.svg") no-repeat center center/cover;
+      background: url("../img/form/checkbox.svg") no-repeat center center/cover;
     }
   }
 
@@ -491,7 +491,7 @@
 
     &::after {
       opacity: 1;
-      background: url("../img/icons/checkbox.svg") no-repeat center center/cover;
+      background: url("../img/form/checkbox.svg") no-repeat center center/cover;
     }
   }
 
@@ -505,7 +505,7 @@
     }
 
     &::after {
-      background: url("../img/icons/checkbox.svg") no-repeat center center/cover;
+      background: url("../img/form/checkbox.svg") no-repeat center center/cover;
     }
   }
 }
