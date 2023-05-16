@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  //padding: 19px 20px 24px;
   padding: 12px 20px 17px;
 
   @media (min-width: $tabletWidth) {
@@ -84,13 +83,6 @@
 .product-card__image {
   display: block;
   margin: auto;
-  //width: 68px;
-  //height: 86px;
-  //
-  //&--large {
-  //  width: 84px;
-  //  height: 100px;
-  //}
 
   @media (min-width: $tabletWidth) {
     position: absolute;
