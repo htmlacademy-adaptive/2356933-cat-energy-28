@@ -1,12 +1,14 @@
 .contacts {
   background-color: $basic-white;
 
-  &--with-background {
-    background-color: $additional-background;
-  }
-
   @media (min-width: $desktopWidth) {
     position: relative;
+  }
+
+  @media (max-width: $desktopWidth - 1px) {
+    &--with-background {
+      background-color: $additional-background;
+    }
   }
 }
 
