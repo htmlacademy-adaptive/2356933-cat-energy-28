@@ -1,4 +1,4 @@
-.slider-wrapper {
+.slider {
   width: 280px;
   height: 256px;
   position: relative;
@@ -48,23 +48,10 @@
   }
 }
 
-.scrolling {
-  pointer-events: none;
-  opacity: 1;
-}
-
 .slider__toggle {
   width: 100%;
   height: 100%;
   color: $icon-color;
-
-  &:hover {
-    color: $accent-color;
-  }
-
-  &:active {
-    color: rgba($accent-color-hover, 0.6);
-  }
 }
 
 .slider__control {
@@ -111,8 +98,8 @@
       background-color: $accent-color;
     }
 
-    path {
-      fill: $accent-color;
+    .slider__toggle {
+      color: $accent-color;
     }
   }
 
@@ -124,9 +111,14 @@
       background-color: rgba($accent-color-hover, 0.6);
     }
 
-    path {
-      fill: rgba($accent-color-hover, 0.6);
+    .slider__toggle {
+      color: rgba($accent-color-hover, 0.6);
     }
+  }
+
+  &--scrolling {
+    pointer-events: none;
+    opacity: 1;
   }
 
   @media (min-width: $tabletWidth) {
