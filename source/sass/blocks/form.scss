@@ -447,7 +447,6 @@
 
 .form__radio {
   &:checked + .form__label--radio {
-
     &::after {
       background-color: $accent-color;
     }
