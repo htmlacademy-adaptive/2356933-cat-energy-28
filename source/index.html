@@ -171,23 +171,10 @@
       <div class="example__slider slider">
         <div class="slider-wrapper">
           <div class="slider__slide slider__slide--before">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/main/after-tablet.webp 1x, img/main/after-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/main/after-mobile.webp 1x, img/main/after-mobile@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/main/after-tablet.png 1x, img/main/after-tablet@2x.png 2x">
-              <img class="slider__image slider__image--after" src="img/main/after-mobile.png" srcset="img/main/after-mobile@2x.png 2x" width="280" height="256" alt="Фото после." draggable="false">
-            </picture>
+            <span class="visually-hidden">Фото кота до приема питания.</span>
           </div>
           <div class="slider__slide slider__slide--after">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/main/before-tablet.webp 1x, img/main/before-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/main/before-mobile.webp 1x, img/main/before-mobile@2x.webp 2x">
-              <source media="(min-width: 768px)"
-                      srcset="img/main/before-tablet.png 1x, img/main/before-tablet@2x.png 2x">
-              <img class="slider__image slider__image--before" src="img/main/before-mobile.png" srcset="img/main/before-mobile@2x.png 2x" width="280" height="256" alt="Фото до." draggable="false">
-            </picture>
+            <span class="visually-hidden">Фото кота после приема питания.</span>
           </div>
           <div class="slider__control">
             <svg class="slider__toggle" width="40" height="40" viewBox="0 0 40 40">
@@ -268,7 +255,6 @@
     </div>
   </div>
 </footer>
-<script src="js/slider.js"></script>
 <script src="js/menu.js"></script>
 </body>
 </html>

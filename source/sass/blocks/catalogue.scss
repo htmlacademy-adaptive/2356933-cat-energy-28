@@ -39,13 +39,14 @@
     flex-wrap: wrap;
     border-top: none;
     border-bottom: none;
-    gap: 142px 60px;
+    gap: 141px 60px;
     padding-top: 165px;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktopWidth) {
     justify-content: space-between;
+    row-gap: 143px;
   }
 }
 
@@ -59,7 +60,6 @@
   @media (min-width: $tabletWidth) {
     min-height: 430px;
     max-width: 324px;
-    padding: 39px;
     box-sizing: border-box;
     flex-grow: 1;
 
@@ -85,10 +85,9 @@
   padding: 25px 20px;
 
   @media (min-width: $tabletWidth) {
-    padding: 0;
+    padding: 51px 39px 39px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 100%;
   }
 }

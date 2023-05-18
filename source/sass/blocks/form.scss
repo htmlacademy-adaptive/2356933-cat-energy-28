@@ -447,8 +447,15 @@
 
 .form__radio {
   &:checked + .form__label--radio {
+
     &::after {
       background-color: $accent-color;
+    }
+  }
+
+  &:focus + .form__label--radio {
+    &::before {
+      outline: 2px solid $basic-black;
     }
   }
 
@@ -481,6 +488,12 @@
     &::after {
       opacity: 1;
       background: url("../img/form/checkbox.svg") no-repeat center center/cover;
+    }
+  }
+
+  &:focus + .form__label--checkbox {
+    &::before {
+      outline: 2px solid $basic-black;
     }
   }
 

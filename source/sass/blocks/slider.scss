@@ -12,25 +12,55 @@
 }
 
 .slider__slide {
-  width: 100%;
+  width: 50%;
   height: 100%;
   position: absolute;
-  background-color: $grey-background;
   top: 0;
-  left: 0;
   pointer-events: none;
   overflow: hidden;
 
+  &--before {
+    left: 0;
+    background: url("../img/main/before-mobile.png");
+  }
+
   &--after {
-    width: 50%;
+    right: 0;
+    background: url("../img/main/after-mobile.png") 100%;
+  }
+
+  @media (min-resolution: 2dppx) {
+    &--before {
+      background: url("../img/main/before-mobile@2x.png") no-repeat;
+      background-size: cover;
+    }
+
+    &--after {
+      background: url("../img/main/after-mobile@2x.png") no-repeat 100%;
+      background-size: cover;
+    }
   }
 
   @media (min-width: $tabletWidth) {
-    background: linear-gradient(to top, $grey-background 355px, $basic-white 355px 100%);
-  }
+    &--before {
+      background: url("../img/main/before-tablet.png");
+    }
 
-  @media (min-width: $desktopWidth) {
-    background: linear-gradient(to top, $grey-background 375px, $basic-white 375px 100%);
+    &--after {
+      background: url("../img/main/after-tablet.png") 100%;
+    }
+
+    @media (min-resolution: 2dppx) {
+      &--before {
+        background: url("../img/main/before-tablet@2x.png") no-repeat;
+        background-size: cover;
+      }
+
+      &--after {
+        background: url("../img/main/after-tablet@2x.png") no-repeat 100%;
+        background-size: cover;
+      }
+    }
   }
 }
 
@@ -75,7 +105,7 @@
     width: 4px;
     height: 128px;
     position: absolute;
-    left: 50%;
+    left: 49%;
     margin-left: -3.5px;
     z-index: 30;
     transition: 0.1s;
@@ -114,11 +144,6 @@
     .slider__toggle {
       color: rgba($accent-color-hover, 0.6);
     }
-  }
-
-  &--scrolling {
-    pointer-events: none;
-    opacity: 1;
   }
 
   @media (min-width: $tabletWidth) {
