@@ -26,7 +26,7 @@
   @media (max-width: $tabletWidth - 1px) {
     background-color: $basic-white;
 
-    &.page-header--nojs {
+    &.page-header__wrapper--nojs {
       flex-direction: column;
       padding-bottom: 0;
       padding-left: 0;
@@ -41,7 +41,7 @@
 
 .page-header__logo {
   @media (max-width: $tabletWidth - 1px) {
-    .page-header--nojs & {
+    .page-header__wrapper--nojs & {
       padding-left: 20px;
       padding-right: 20px;
       padding-bottom: 17px;
@@ -51,7 +51,7 @@
 
 .page-header__navigation {
   @media (max-width: $tabletWidth - 1px) {
-    .page-header--nojs & {
+    .page-header__wrapper--nojs & {
       border-top: 1px solid $grey-additional-background;
     }
   }
@@ -59,7 +59,7 @@
 
 .page-header__navigation-wrapper {
   @media (max-width: $tabletWidth - 1px) {
-    .page-header--nojs & {
+    .page-header__wrapper--nojs & {
       position: static;
       transform: translateY(0);
     }
@@ -67,14 +67,14 @@
 }
 
 .page-header__menu-button {
-  .page-header--nojs & {
+  .page-header__wrapper--nojs & {
     display: none;
   }
 }
 
 .page-header__navigation-item {
   @media (max-width: $tabletWidth - 1px) {
-    .page-header--nojs & {
+    .page-header__wrapper--nojs & {
       &:last-child {
         border-bottom: none;
       }
